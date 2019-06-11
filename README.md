@@ -103,10 +103,10 @@ SELECCIÓN DE PARÁMETROS
 ------
 Abrimos el population.log de cada cluster generado por el programa population. Copiamos el número de loci y SNPs kept bajo r 0.8 (se guardan los loci y SNPs que están en el 80% de los individuos). Con esta tabla hicimos dos gráficos, uno para los datos antes de correr populations y otro para los datos de r80. 
 
-![fotito](/Users/bioweb/Desktop/Screen Shot 2019-06-11 at 16.45.42.png)
+![fotito](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/fotos/Grafico1.png)
 
 
-![fotito2](/Users/bioweb/Desktop/Screen Shot 2019-06-11 at 16.45.51.png)
+![fotito2](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/fotos/Grafico2.png)
 
 De acuerdo a los resultados mostrados en los gráficos, vemos que disminuye el número de loci y SNPs obtenidos con m5 en comparación a m4 (m es la cantidad mínima de secuencias iguales para formar un stack). M (distancia permitida entre stacks de un mismo locus de un mismo individuo) no afecta en los resultados. Mientras n (distancia permitida entre indiviuos para un mismo locus) aumenta, se ve una disminución de loci y un aumento de SNPs (cambio esperado). En el gráfico de r80 vemos que en n3 hay un pequeño aumento de loci y SNPs, por este motivo hemos decidido aceptar la combinación: m4M3n3.
 
