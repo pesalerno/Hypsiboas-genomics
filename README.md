@@ -1,5 +1,5 @@
-1. DEMULTIPLEXING
-====
+#1. DEMULTIPLEXING
+
 
  
 >primero se debe hacer un documento de texto separado por tabs en donde la primera columna se especifiquen los barcodes, en la segunda los primers y en la tercera los nombres de los individuos y guardarlo en formato unix. Verificar que no hayan espacios o caracteres desconocidos asociados a los nombres (view>text display>show invisibles)
@@ -10,8 +10,8 @@ Para el proceso de demultiplexing utilizamos el codigo:
 	process_radtags -p /Users/bioweb/Desktop/MINGA_genomica_2019/Hypsiboas_ddRAD/raw-data -o /Users/bioweb/Desktop/MINGA_genomica_2019/Hypsiboas_ddRAD/raw-data/prueba_dem -b /Users/bioweb/Desktop/MINGA_genomica_2019/Hypsiboas_ddRAD/raw-data/demultiplex_todos2.txt -c -q -r --inline_index -- renz_1 sphI --renz_2 mspI
 
 
-2. DENOVO MAP | Pruebas genotipificación
-====
+#2. DENOVO MAP | Pruebas genotipificación
+
 
 
 **1.1. Preparando archivos para genotipificación**
@@ -76,9 +76,11 @@ Se corre un archivo `*.sh` a la vez:
 	
 Se prueba con `squeue` para ver si la corrida ya esta en fila para procesarse.	
 	
-En una tabla de excel pusimos los valores de los loci y los SNPs obtenidos en los archivos denovo para cada combinación de parámetros.	
-corriendo populations para obtener r80
------
+En una tabla de excel pusimos los valores de los loci y los SNPs obtenidos en los archivos denovo para cada combinación de parámetros.
+	
+##corriendo populations para obtener r80
+
+
 Con este programa de Stacks vamos a obtener las matrices de SNPs para evaluar las distintas combinaciones de parametros utilizadas en **denovo_map**. LA idea es determinar, de todos los loci, cuantos loci permanecen cuando se filtran los que estan presentes en menos del 80% de individuos.
 
 Primero, modificamos el **popmap** para tener a todos los individuos como si vinieran de una sola población (no importa cual). 
@@ -146,8 +148,8 @@ Para esta pruebas, encontramos los siguientes resultados:
 
 
 
-3. GENOTIPIFICACION FINAL CON PARÁMETROS SELECCIONADOS
-------
+#3. GENOTIPIFICACION FINAL CON PARÁMETROS SELECCIONADOS
+
 
 
 3.1. VCF TOOLS
