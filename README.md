@@ -153,7 +153,7 @@ Parece ser, entonces, que la mejor opcion para TODAS las muestras de Hypsiboas, 
 >Todos los graficos de esta seccion fueron generados con los datos de [este archivo](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/Grafico_Resultado_param_TODOS.xlsx).
 
 
-# 3.GENOTIPIFICACION FINAL CON PARÁMETROS SELECCIONADOS
+# 3. GENOTIPIFICACION FINAL CON PARÁMETROS SELECCIONADOS
 
 
 
@@ -197,6 +197,8 @@ Resultados:
 	
 	./plink --file outputpopulations_b --maf 0.016 --recode --out outputpopulations_c --noweb
 
+Resultados:
+	
 	Before frequency and genotyping pruning, there are 4680 SNPs
 	33 founders and 0 non-founders found
 	Total genotyping rate in remaining individuals is 0.881507
