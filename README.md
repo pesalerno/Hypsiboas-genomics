@@ -1,4 +1,4 @@
-#1. DEMULTIPLEXING
+# 1. DEMULTIPLEXING
 
 
  
@@ -10,7 +10,7 @@ Para el proceso de demultiplexing utilizamos el codigo:
 	process_radtags -p /Users/bioweb/Desktop/MINGA_genomica_2019/Hypsiboas_ddRAD/raw-data -o /Users/bioweb/Desktop/MINGA_genomica_2019/Hypsiboas_ddRAD/raw-data/prueba_dem -b /Users/bioweb/Desktop/MINGA_genomica_2019/Hypsiboas_ddRAD/raw-data/demultiplex_todos2.txt -c -q -r --inline_index -- renz_1 sphI --renz_2 mspI
 
 
-#2. DENOVO MAP | Pruebas genotipificación
+# 2. DENOVO MAP | Pruebas genotipificación
 
 
 
@@ -78,7 +78,7 @@ Se prueba con `squeue` para ver si la corrida ya esta en fila para procesarse.
 	
 En una tabla de excel pusimos los valores de los loci y los SNPs obtenidos en los archivos denovo para cada combinación de parámetros.
 	
-##corriendo populations para obtener r80
+## corriendo populations para obtener r80
 
 
 Con este programa de Stacks vamos a obtener las matrices de SNPs para evaluar las distintas combinaciones de parametros utilizadas en **denovo_map**. LA idea es determinar, de todos los loci, cuantos loci permanecen cuando se filtran los que estan presentes en menos del 80% de individuos.
@@ -151,7 +151,7 @@ Para esta pruebas, encontramos los siguientes resultados:
 Parece ser, entonces, que la mejor opcion para TODAS las muestras de Hypsiboas, en cuanto a combinacion de parametros, es de m4M3n4, es decir, el optimo solo cambio de n de 3 a 4, y todo lo demas permance igual. ESta sera la combinacion de parametros que usaremos para el resto de los analisis de todos los Hypsiboas. 
 
 
-#3. GENOTIPIFICACION FINAL CON PARÁMETROS SELECCIONADOS
+# 3.GENOTIPIFICACION FINAL CON PARÁMETROS SELECCIONADOS
 
 
 
