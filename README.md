@@ -245,4 +245,5 @@ Se borraron 323 SNPs de la matriz. Ahora la matriz final está en outputpopulati
 >PGDSpider:
 Programa que transforma las matrices finales .ped y map en structure y en genepop. 
 
-Hacer gráficos en R.
+## estimando estructura poblacional en R
+Hacer gráficos utilizando [el siguiente codigo]() para el paquete **adegenet** en R. 
