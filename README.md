@@ -146,16 +146,22 @@ Para esta pruebas, encontramos los siguientes resultados:
 
 ![fotito3](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/fotos/Grafico3.png)
 
+![fotito3](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/fotos/Grafico4.png)
+
+Parece ser, entonces, que la mejor opcion para TODAS las muestras de Hypsiboas, en cuanto a combinacion de parametros, es de m4M3n4, es decir, el optimo solo cambio de n de 3 a 4, y todo lo demas permance igual. ESta sera la combinacion de parametros que usaremos para el resto de los analisis de todos los Hypsiboas. 
 
 
 #3. GENOTIPIFICACION FINAL CON PARÁMETROS SELECCIONADOS
 
 
 
-3.1. VCF TOOLS
+3.1. VCF TOOLS. 
+
+Necesitamos utilizar vcftools para transformar el archivo de .vcf (que exporta ahora stacks 2.0) a .ped y .map, para poder utilizasr en el programa plink. 
 
 
 3.2. FILTRADO: PLINK
+
  Hicimos pruebas de filtrado en plink con distintos niveles de filtrado, para ver el efecto de retencion de SNPs e individuos. 
  
  3.2.1. Pruebas de filtrado con solo jimenezi
