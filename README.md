@@ -150,6 +150,8 @@ Para esta pruebas, encontramos los siguientes resultados:
 
 Parece ser, entonces, que la mejor opcion para TODAS las muestras de Hypsiboas, en cuanto a combinacion de parametros, es de m4M3n4, es decir, el optimo solo cambio de n de 3 a 4, y todo lo demas permance igual. ESta sera la combinacion de parametros que usaremos para el resto de los analisis de todos los Hypsiboas. 
 
+>Todos los graficos de esta seccion fueron generados con los datos de [este archivo](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/Grafico_Resultado_param_TODOS.xlsx).
+
 
 # 3.GENOTIPIFICACION FINAL CON PARÁMETROS SELECCIONADOS
 
@@ -246,4 +248,4 @@ Se borraron 323 SNPs de la matriz. Ahora la matriz final está en outputpopulati
 Programa que transforma las matrices finales .ped y map en structure y en genepop. 
 
 ## estimando estructura poblacional en R
-Hacer gráficos utilizando [el siguiente codigo]() para el paquete **adegenet** en R. 
+Hacer gráficos utilizando [el siguiente codigo](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/SCRIPT_ADEGENET.R) para el paquete **adegenet** en R. 
