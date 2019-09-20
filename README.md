@@ -14,7 +14,7 @@ Para el proceso de demultiplexing utilizamos el codigo:
 
 
 
-**1.1. Preparando archivos para genotipificación**
+**Preparando archivos para genotipificación**
 
 Primero modificamos el archivo de excel en donde estaban los nombres de los individuos con sus poblaciones. En otra hoja del mismo libro copie los nombres de los individuos, tal y como esta en el archivo prueba\_dem (demultiplexed) y en otra columna pegue las especies de cada individuo. En una tercera columna concatene los nombres de los individuos con las 3 primeras letras de su respectiva especie para saber de que especie es cada individuo. Para cambiar los nombres de los individuos en el archivo prueba\_dem, en otra hoja del mismo libro, en la primera columna se coloca mv (move o cambiar) en la segunda los nombres que estaban en el archivo prueba\_dem y en la tercera columna los nombres con la especie (concatenadas) que se quiere cambiar. Se copian estas columnas al Text Wrangler y se ven los invisibles para que no hayan tabs haciendo 
 
@@ -37,7 +37,7 @@ Para correr **denovo\_map**, tengo que colocarme dentro de `raw-data`y usar la s
 	denovo_map.pl -M 3 -n 2 -o ./outputfolder --popmap ./pop_map.txt --samples ./prueba_dem
 	
 	 
-**1.2. PRUEBAS DE GENOTIPIFICACION**
+## corriendo denovo para obtener las permutaciones
 
 Primero hicimos pruebas de genotipificación utilizando unicamente la especie de interes principal, *H. Jimenezi*, y luego hicimos las mismas pruebas de genotipificacion pero con todas las especies, y variando un poco el parametro n (entre las dos pruebas) para tomar en cuenta la diferencia de divergencia entre los dos sets de datos. 
 
@@ -155,16 +155,59 @@ Parece ser, entonces, que la mejor opcion para TODAS las muestras de Hypsiboas, 
 
 
 
-3.1. VCF TOOLS. 
+**transformando el archivo en VCF TOOLS** 
 
-Necesitamos utilizar vcftools para transformar el archivo de .vcf (que exporta ahora stacks 2.0) a .ped y .map, para poder utilizasr en el programa plink. 
+Necesitamos utilizar vcftools para transformar el archivo de .vcf (que exporta ahora stacks 2.0) a .ped y .map, para poder utilizar en el programa plink. PAra esto, corremos la siguiente linea de codigo:
+
+	vcftools --vcf path/to/file.vcf --plink --out filename
+
+## filtrando en PLINK
 
 
-3.2. FILTRADO: PLINK
+**1er FILTRO:** 
 
- Hicimos pruebas de filtrado en plink con distintos niveles de filtrado, para ver el efecto de retencion de SNPs e individuos. 
+	./plink --file populations.snps --geno 0.25 --recode --out outputpopulations_a --noweb
+
+Resultados:
+	
+	Total genotyping rate in remaining individuals is 0.331516
+	71955 SNPs failed missingness test ( GENO > 0.25 )
+	0 SNPs failed frequency test ( MAF < 0 )
+	After frequency and genotyping pruning, there are 4680 SNPs
+	After filtering, 0 cases, 0 controls and 37 missing
+	After filtering, 0 males, 0 females, and 37 of unspecified sex
+	Writing recoded ped file to [ outputpopulations_a.ped ] 
+	Writing new map file to [ outputpopulations_a.map ] 
+
+**2do FILTRO:**
+
+	./plink --file outputpopulations_a --mind 0.5 --recode --out outputpopulations_b --noweb
+
+Resultados:
+	
+	Before frequency and genotyping pruning, there are 4680 SNPs
+	37 founders and 0 non-founders found
+	Writing list of removed individuals to [ outputpopulations_b.irem ]
+	4 of 37 individuals removed for low genotyping ( MIND > 0.5 )
+	Total genotyping rate in remaining individuals is 0.881507
+
+**3er FILTRO:** 
+	
+	./plink --file outputpopulations_b --maf 0.016 --recode --out outputpopulations_c --noweb
+
+	Before frequency and genotyping pruning, there are 4680 SNPs
+	33 founders and 0 non-founders found
+	Total genotyping rate in remaining individuals is 0.881507
+	0 SNPs failed missingness test ( GENO > 1 )
+	131 SNPs failed frequency test ( MAF < 0.016 )
+	After frequency and genotyping pruning, there are 4549 SNPs
+
+
+## pruebas de filtrado
+
+Hicimos pruebas de filtrado en **plink** con distintos niveles de filtrado, para ver el efecto de retencion de SNPs e individuos. 
  
- 3.2.1. Pruebas de filtrado con solo jimenezi
+**Pruebas de filtrado con solo jimenezi**
  
  
 
@@ -177,63 +220,29 @@ Necesitamos utilizar vcftools para transformar el archivo de .vcf (que exporta a
 0.25 | 0.5 | 4600 | 33
 0.25 | 0.4 | 4600 | 28
  
-En esta tabla se puede ver que cuando se excluyen los SNPs que están en menos del 75% de los individuos, y se excluyen los individuos que no tienen más del 50% de SNPs, nos quedamos con 4600 SNPs y con 33 individuos (se excluyeron solo 4 individuos).
+>En esta tabla se puede ver que cuando se excluyen los SNPs que están en menos del 75% de los individuos, y se excluyen los individuos que no tienen más del 50% de SNPs, nos quedamos con 4600 SNPs y con 33 individuos (se excluyeron solo 4 individuos).
 
 
-1er FILTRO: 
 
-	./plink --file populations.snps --geno 0.25 --recode --out outputpopulations_a --noweb
-	
-Total genotyping rate in remaining individuals is 0.331516
-71955 SNPs failed missingness test ( GENO > 0.25 )
-0 SNPs failed frequency test ( MAF < 0 )
-After frequency and genotyping pruning, there are 4680 SNPs
-After filtering, 0 cases, 0 controls and 37 missing
-After filtering, 0 males, 0 females, and 37 of unspecified sex
-Writing recoded ped file to [ outputpopulations_a.ped ] 
-Writing new map file to [ outputpopulations_a.map ] 
-
-2do FILTRO: 
-
-	./plink --file outputpopulations_a --mind 0.5 --recode --out outputpopulations_b --noweb
-	
-Before frequency and genotyping pruning, there are 4680 SNPs
-37 founders and 0 non-founders found
-Writing list of removed individuals to [ outputpopulations_b.irem ]
-4 of 37 individuals removed for low genotyping ( MIND > 0.5 )
-Total genotyping rate in remaining individuals is 0.881507
-
-3er FILTRO: 
-	
-	./plink --file outputpopulations_b --maf 0.016 --recode --out outputpopulations_c --noweb
-
-Before frequency and genotyping pruning, there are 4680 SNPs
-33 founders and 0 non-founders found
-Total genotyping rate in remaining individuals is 0.881507
-0 SNPs failed missingness test ( GENO > 1 )
-131 SNPs failed frequency test ( MAF < 0.016 )
-After frequency and genotyping pruning, there are 4549 SNPs
-
-
-LINKAGE DISEQUILIBRIUM
+## filtrando de acuerdo a LINKAGE DISEQUILIBRIUM
 
 Ver los SNPs que están relacionados por estar muy cerca o en el mismo cromosoma y filtrarlos.
 
 	./plink --file outputpopulations_c --r2 --out outputpopulations --noweb
 	
-La tabla que se crea (outputpopulations.ld) contiene los valores de linkage entre todos los SNPs que quedan en la matriz. Se abre la tabla en BBEdit, se cambia el nombre a .txt (manualmente) y se abre la tabla en Excel para poder ordenar los valores de R2 (linkage). Se crea una tabla en BBEdit con los SNPs (el primero de cada par) de los que tienen R2 mayor a 0.5 (Blacklist_ld.txt).
+>La tabla que se crea (outputpopulations.ld) contiene los valores de linkage entre todos los SNPs que quedan en la matriz. Se abre la tabla en BBEdit, se cambia el nombre a .txt (manualmente) y se abre la tabla en Excel para poder ordenar los valores de R2 (linkage). Se crea una tabla en BBEdit con los SNPs (el primero de cada par) de los que tienen R2 mayor a 0.5 (Blacklist_ld.txt).
 
-Filtrar Blacklist: 
+Filtrar utilizando un Blacklist: 
 
 	./plink --file outputpopulations_c --exclude blacklist_ld.txt --recode --out outputpopulations_d --noweb
 
 Se borraron 323 SNPs de la matriz. Ahora la matriz final está en outputpopulations_d.
 
-INBREEDING
+## estimando INBREEDING individual en plink
 
 	./plink --noweb --file outputpopulations_d --het --out outputpopulations_inbreeding
 
-PGDSpider:
+>PGDSpider:
 Programa que transforma las matrices finales .ped y map en structure y en genepop. 
 
 Hacer gráficos en R.
