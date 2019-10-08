@@ -1,0 +1,3792 @@
+denovo_map.pl version 2.0Beta7c started at 2019-10-07 07:25:46
+/usr/local/bin/denovo_map.pl -m 4 -M 3 -n 4 -o ./denovo-m4M3n4-out --popmap ./pop_map_outgroup.txt --samples .
+
+ustacks
+==========
+
+Sample 1 of 53 'jimPS172'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimPS172.fq.gz -o ./denovo-m4M3n4-out -i 1 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimPS172.fq.gz'
+  Sample ID: 1
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1341788 reads; formed:
+  90565 stacks representing 923860 primary reads (68.9%)
+  315273 secondary stacks representing 417928 secondary reads (31.1%)
+
+Stack coverage: mean=10.20; stdev=32.95; max=4365; n_reads=923860(68.9%)
+Removing repetitive stacks: cov > 77 (mean+2*stdev)...
+Blacklisted 3678 stacks.
+Coverage after repeat removal: mean=9.18; stdev=6.46; max=77; n_reads=797397(59.4%)
+Assembling stacks (max. dist. M=3)...
+Assembled 86887 stacks into 75718; blacklisted 421 stacks.
+Coverage after assembling stacks: mean=9.72; stdev=6.99; max=122; n_reads=730554(54.4%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=11.42; stdev=16.24; max=2997; n_reads=857904(63.9%)
+
+Final coverage: mean=11.42; stdev=16.24; max=2997; n_reads=857904(63.9%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 2 of 53 'jimPS173'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimPS173.fq.gz -o ./denovo-m4M3n4-out -i 2 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimPS173.fq.gz'
+  Sample ID: 2
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1219850 reads; formed:
+  82638 stacks representing 863740 primary reads (70.8%)
+  270855 secondary stacks representing 356110 secondary reads (29.2%)
+
+Stack coverage: mean=10.45; stdev=27.79; max=2520; n_reads=863740(70.8%)
+Removing repetitive stacks: cov > 67 (mean+2*stdev)...
+Blacklisted 3057 stacks.
+Coverage after repeat removal: mean=9.53; stdev=6.44; max=67; n_reads=758455(62.2%)
+Assembling stacks (max. dist. M=3)...
+Assembled 79581 stacks into 69391; blacklisted 368 stacks.
+Coverage after assembling stacks: mean=10.21; stdev=7.05; max=143; n_reads=702829(57.6%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=11.88; stdev=10.92; max=1046; n_reads=818051(67.1%)
+
+Final coverage: mean=11.88; stdev=10.92; max=1046; n_reads=818051(67.1%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 3 of 53 'jimPS174'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimPS174.fq.gz -o ./denovo-m4M3n4-out -i 3 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimPS174.fq.gz'
+  Sample ID: 3
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1821295 reads; formed:
+  108160 stacks representing 1341497 primary reads (73.7%)
+  373110 secondary stacks representing 479798 secondary reads (26.3%)
+
+Stack coverage: mean=12.40; stdev=41.95; max=4960; n_reads=1341497(73.7%)
+Removing repetitive stacks: cov > 97 (mean+2*stdev)...
+Blacklisted 4473 stacks.
+Coverage after repeat removal: mean=11.18; stdev=8.73; max=97; n_reads=1159549(63.7%)
+Assembling stacks (max. dist. M=3)...
+Assembled 103687 stacks into 88511; blacklisted 513 stacks.
+Coverage after assembling stacks: mean=12.06; stdev=9.51; max=148; n_reads=1059149(58.2%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=13.99; stdev=14.16; max=1562; n_reads=1228338(67.4%)
+
+Final coverage: mean=13.99; stdev=14.16; max=1562; n_reads=1228338(67.4%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 4 of 53 'jimPS175'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimPS175.fq.gz -o ./denovo-m4M3n4-out -i 4 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimPS175.fq.gz'
+  Sample ID: 4
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...2M...
+Loaded 2373356 reads; formed:
+  125448 stacks representing 1792338 primary reads (75.5%)
+  464367 secondary stacks representing 581018 secondary reads (24.5%)
+
+Stack coverage: mean=14.29; stdev=45.38; max=6642; n_reads=1792338(75.5%)
+Removing repetitive stacks: cov > 106 (mean+2*stdev)...
+Blacklisted 5283 stacks.
+Coverage after repeat removal: mean=13.01; stdev=10.89; max=106; n_reads=1563337(65.9%)
+Assembling stacks (max. dist. M=3)...
+Assembled 120165 stacks into 101571; blacklisted 584 stacks.
+Coverage after assembling stacks: mean=14.22; stdev=12.12; max=162; n_reads=1432999(60.4%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=16.55; stdev=20.51; max=2823; n_reads=1668156(70.3%)
+
+Final coverage: mean=16.55; stdev=20.51; max=2823; n_reads=1668156(70.3%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 5 of 53 'jimPS176'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimPS176.fq.gz -o ./denovo-m4M3n4-out -i 5 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimPS176.fq.gz'
+  Sample ID: 5
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...2M...
+Loaded 2001139 reads; formed:
+  115939 stacks representing 1473082 primary reads (73.6%)
+  412213 secondary stacks representing 528057 secondary reads (26.4%)
+
+Stack coverage: mean=12.71; stdev=43.32; max=6823; n_reads=1473082(73.6%)
+Removing repetitive stacks: cov > 100 (mean+2*stdev)...
+Blacklisted 4945 stacks.
+Coverage after repeat removal: mean=11.51; stdev=9.33; max=100; n_reads=1277397(63.8%)
+Assembling stacks (max. dist. M=3)...
+Assembled 110994 stacks into 94578; blacklisted 555 stacks.
+Coverage after assembling stacks: mean=12.44; stdev=10.25; max=215; n_reads=1167163(58.3%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=14.45; stdev=17.48; max=2517; n_reads=1356313(67.8%)
+
+Final coverage: mean=14.45; stdev=17.48; max=2517; n_reads=1356313(67.8%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 6 of 53 'jimPS177'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimPS177.fq.gz -o ./denovo-m4M3n4-out -i 6 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimPS177.fq.gz'
+  Sample ID: 6
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1379300 reads; formed:
+  91472 stacks representing 955530 primary reads (69.3%)
+  320253 secondary stacks representing 423770 secondary reads (30.7%)
+
+Stack coverage: mean=10.45; stdev=49.20; max=9270; n_reads=955530(69.3%)
+Removing repetitive stacks: cov > 109 (mean+2*stdev)...
+Blacklisted 3402 stacks.
+Coverage after repeat removal: mean=9.38; stdev=7.02; max=108; n_reads=825848(59.9%)
+Assembling stacks (max. dist. M=3)...
+Assembled 88070 stacks into 75932; blacklisted 440 stacks.
+Coverage after assembling stacks: mean=9.88; stdev=7.31; max=149; n_reads=744582(54.0%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=11.60; stdev=13.00; max=1366; n_reads=874750(63.4%)
+
+Final coverage: mean=11.60; stdev=13.00; max=1366; n_reads=874750(63.4%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 7 of 53 'jimPS178'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimPS178.fq.gz -o ./denovo-m4M3n4-out -i 7 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimPS178.fq.gz'
+  Sample ID: 7
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1289628 reads; formed:
+  87102 stacks representing 908117 primary reads (70.4%)
+  287253 secondary stacks representing 381511 secondary reads (29.6%)
+
+Stack coverage: mean=10.43; stdev=34.35; max=4152; n_reads=908117(70.4%)
+Removing repetitive stacks: cov > 80 (mean+2*stdev)...
+Blacklisted 3346 stacks.
+Coverage after repeat removal: mean=9.43; stdev=6.55; max=80; n_reads=789713(61.2%)
+Assembling stacks (max. dist. M=3)...
+Assembled 83756 stacks into 72634; blacklisted 407 stacks.
+Coverage after assembling stacks: mean=10.06; stdev=7.12; max=97; n_reads=725583(56.3%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=11.70; stdev=13.49; max=1733; n_reads=843699(65.4%)
+
+Final coverage: mean=11.70; stdev=13.49; max=1733; n_reads=843699(65.4%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 8 of 53 'jimPS179'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimPS179.fq.gz -o ./denovo-m4M3n4-out -i 8 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimPS179.fq.gz'
+  Sample ID: 8
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 798440 reads; formed:
+  59476 stacks representing 563493 primary reads (70.6%)
+  178824 secondary stacks representing 234947 secondary reads (29.4%)
+
+Stack coverage: mean=9.47; stdev=24.66; max=2379; n_reads=563493(70.6%)
+Removing repetitive stacks: cov > 59 (mean+2*stdev)...
+Blacklisted 2326 stacks.
+Coverage after repeat removal: mean=8.61; stdev=5.36; max=58; n_reads=492007(61.6%)
+Assembling stacks (max. dist. M=3)...
+Assembled 57150 stacks into 50740; blacklisted 264 stacks.
+Coverage after assembling stacks: mean=9.09; stdev=5.85; max=91; n_reads=457865(57.3%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=10.62; stdev=11.90; max=1249; n_reads=534833(67.0%)
+
+Final coverage: mean=10.62; stdev=11.90; max=1249; n_reads=534833(67.0%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 9 of 53 'jimPS180'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimPS180.fq.gz -o ./denovo-m4M3n4-out -i 9 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimPS180.fq.gz'
+  Sample ID: 9
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1019366 reads; formed:
+  71585 stacks representing 672403 primary reads (66.0%)
+  258912 secondary stacks representing 346963 secondary reads (34.0%)
+
+Stack coverage: mean=9.39; stdev=29.72; max=3257; n_reads=672403(66.0%)
+Removing repetitive stacks: cov > 69 (mean+2*stdev)...
+Blacklisted 3013 stacks.
+Coverage after repeat removal: mean=8.33; stdev=5.66; max=69; n_reads=571175(56.0%)
+Assembling stacks (max. dist. M=3)...
+Assembled 68572 stacks into 60206; blacklisted 340 stacks.
+Coverage after assembling stacks: mean=8.73; stdev=6.08; max=108; n_reads=521599(51.2%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=10.36; stdev=15.36; max=2551; n_reads=618795(60.7%)
+
+Final coverage: mean=10.36; stdev=15.36; max=2551; n_reads=618795(60.7%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 10 of 53 'lemPS185'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./lemPS185.fq.gz -o ./denovo-m4M3n4-out -i 10 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './lemPS185.fq.gz'
+  Sample ID: 10
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1307091 reads; formed:
+  85593 stacks representing 917594 primary reads (70.2%)
+  301014 secondary stacks representing 389497 secondary reads (29.8%)
+
+Stack coverage: mean=10.72; stdev=23.74; max=3608; n_reads=917594(70.2%)
+Removing repetitive stacks: cov > 59 (mean+2*stdev)...
+Blacklisted 2945 stacks.
+Coverage after repeat removal: mean=9.93; stdev=7.09; max=59; n_reads=820794(62.8%)
+Assembling stacks (max. dist. M=3)...
+Assembled 82648 stacks into 71976; blacklisted 381 stacks.
+Coverage after assembling stacks: mean=10.75; stdev=7.92; max=91; n_reads=767243(58.7%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=12.61; stdev=12.62; max=1112; n_reads=900244(68.9%)
+
+Final coverage: mean=12.61; stdev=12.62; max=1112; n_reads=900244(68.9%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 11 of 53 'lemPS188'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./lemPS188.fq.gz -o ./denovo-m4M3n4-out -i 11 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './lemPS188.fq.gz'
+  Sample ID: 11
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1871580 reads; formed:
+  107527 stacks representing 1379982 primary reads (73.7%)
+  384934 secondary stacks representing 491598 secondary reads (26.3%)
+
+Stack coverage: mean=12.83; stdev=39.14; max=8230; n_reads=1379982(73.7%)
+Removing repetitive stacks: cov > 92 (mean+2*stdev)...
+Blacklisted 3514 stacks.
+Coverage after repeat removal: mean=11.89; stdev=9.47; max=92; n_reads=1236583(66.1%)
+Assembling stacks (max. dist. M=3)...
+Assembled 104013 stacks into 89323; blacklisted 507 stacks.
+Coverage after assembling stacks: mean=12.87; stdev=10.38; max=154; n_reads=1141102(61.0%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=14.92; stdev=19.97; max=3900; n_reads=1322250(70.6%)
+
+Final coverage: mean=14.92; stdev=19.97; max=3900; n_reads=1322250(70.6%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 12 of 53 'jimPS193'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimPS193.fq.gz -o ./denovo-m4M3n4-out -i 12 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimPS193.fq.gz'
+  Sample ID: 12
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...2M...
+Loaded 2233127 reads; formed:
+  124187 stacks representing 1658901 primary reads (74.3%)
+  451955 secondary stacks representing 574226 secondary reads (25.7%)
+
+Stack coverage: mean=13.36; stdev=45.09; max=7033; n_reads=1658901(74.3%)
+Removing repetitive stacks: cov > 104 (mean+2*stdev)...
+Blacklisted 5390 stacks.
+Coverage after repeat removal: mean=12.05; stdev=10.04; max=104; n_reads=1431216(64.1%)
+Assembling stacks (max. dist. M=3)...
+Assembled 118797 stacks into 100885; blacklisted 626 stacks.
+Coverage after assembling stacks: mean=13.06; stdev=11.05; max=188; n_reads=1306333(58.5%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=15.24; stdev=22.27; max=4030; n_reads=1524684(68.3%)
+
+Final coverage: mean=15.24; stdev=22.27; max=4030; n_reads=1524684(68.3%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 13 of 53 'jimPS196'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimPS196.fq.gz -o ./denovo-m4M3n4-out -i 13 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimPS196.fq.gz'
+  Sample ID: 13
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1817310 reads; formed:
+  108919 stacks representing 1292554 primary reads (71.1%)
+  410212 secondary stacks representing 524756 secondary reads (28.9%)
+
+Stack coverage: mean=11.87; stdev=38.88; max=4052; n_reads=1292554(71.1%)
+Removing repetitive stacks: cov > 90 (mean+2*stdev)...
+Blacklisted 4612 stacks.
+Coverage after repeat removal: mean=10.66; stdev=8.17; max=89; n_reads=1111395(61.2%)
+Assembling stacks (max. dist. M=3)...
+Assembled 104307 stacks into 89384; blacklisted 498 stacks.
+Coverage after assembling stacks: mean=11.48; stdev=8.95; max=148; n_reads=1017783(56.0%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=13.55; stdev=14.45; max=1626; n_reads=1201443(66.1%)
+
+Final coverage: mean=13.55; stdev=14.45; max=1626; n_reads=1201443(66.1%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 14 of 53 'rorPS283'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./rorPS283.fq.gz -o ./denovo-m4M3n4-out -i 14 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './rorPS283.fq.gz'
+  Sample ID: 14
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1355033 reads; formed:
+  70380 stacks representing 1056517 primary reads (78.0%)
+  221976 secondary stacks representing 298516 secondary reads (22.0%)
+
+Stack coverage: mean=15.01; stdev=556.32; max=116519; n_reads=1056517(78.0%)
+Removing repetitive stacks: cov > 1128 (mean+2*stdev)...
+Blacklisted 3650 stacks.
+Coverage after repeat removal: mean=8.73; stdev=11.04; max=881; n_reads=582722(43.0%)
+Assembling stacks (max. dist. M=3)...
+Assembled 66730 stacks into 52769; blacklisted 308 stacks.
+Coverage after assembling stacks: mean=8.65; stdev=6.32; max=311; n_reads=453917(33.5%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=10.20; stdev=16.03; max=2741; n_reads=535179(39.5%)
+
+Final coverage: mean=10.20; stdev=16.03; max=2741; n_reads=535179(39.5%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 15 of 53 'rorPS284'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./rorPS284.fq.gz -o ./denovo-m4M3n4-out -i 15 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './rorPS284.fq.gz'
+  Sample ID: 15
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...2M...3M...
+Loaded 3178699 reads; formed:
+  131072 stacks representing 2621864 primary reads (82.5%)
+  433973 secondary stacks representing 556835 secondary reads (17.5%)
+
+Stack coverage: mean=20.00; stdev=814.53; max=228936; n_reads=2621864(82.5%)
+Removing repetitive stacks: cov > 1650 (mean+2*stdev)...
+Blacklisted 4528 stacks.
+Coverage after repeat removal: mean=13.04; stdev=18.53; max=1492; n_reads=1650598(51.9%)
+Assembling stacks (max. dist. M=3)...
+Assembled 126544 stacks into 99468; blacklisted 632 stacks.
+Coverage after assembling stacks: mean=13.35; stdev=12.20; max=373; n_reads=1319731(41.5%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=15.30; stdev=14.82; max=1147; n_reads=1512079(47.6%)
+
+Final coverage: mean=15.30; stdev=14.82; max=1147; n_reads=1512079(47.6%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 16 of 53 'rorPS285'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./rorPS285.fq.gz -o ./denovo-m4M3n4-out -i 16 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './rorPS285.fq.gz'
+  Sample ID: 16
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...2M...
+Loaded 2124126 reads; formed:
+  95675 stacks representing 1597717 primary reads (75.2%)
+  412119 secondary stacks representing 526409 secondary reads (24.8%)
+
+Stack coverage: mean=16.70; stdev=642.32; max=149902; n_reads=1597717(75.2%)
+Removing repetitive stacks: cov > 1302 (mean+2*stdev)...
+Blacklisted 4288 stacks.
+Coverage after repeat removal: mean=10.28; stdev=16.19; max=1259; n_reads=939134(44.2%)
+Assembling stacks (max. dist. M=3)...
+Assembled 91387 stacks into 70320; blacklisted 437 stacks.
+Coverage after assembling stacks: mean=10.51; stdev=7.92; max=353; n_reads=734081(34.6%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=12.40; stdev=10.63; max=745; n_reads=866169(40.8%)
+
+Final coverage: mean=12.40; stdev=10.63; max=745; n_reads=866169(40.8%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 17 of 53 'rorPS297'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./rorPS297.fq.gz -o ./denovo-m4M3n4-out -i 17 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './rorPS297.fq.gz'
+  Sample ID: 17
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1116462 reads; formed:
+  58548 stacks representing 794683 primary reads (71.2%)
+  242265 secondary stacks representing 321779 secondary reads (28.8%)
+
+Stack coverage: mean=13.57; stdev=470.22; max=88251; n_reads=794683(71.2%)
+Removing repetitive stacks: cov > 955 (mean+2*stdev)...
+Blacklisted 3410 stacks.
+Coverage after repeat removal: mean=7.76; stdev=10.33; max=609; n_reads=427775(38.3%)
+Assembling stacks (max. dist. M=3)...
+Assembled 55138 stacks into 42840; blacklisted 239 stacks.
+Coverage after assembling stacks: mean=7.78; stdev=5.22; max=317; n_reads=331376(29.7%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=9.34; stdev=12.23; max=1354; n_reads=397980(35.6%)
+
+Final coverage: mean=9.34; stdev=12.23; max=1354; n_reads=397980(35.6%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 18 of 53 'jimPS05951'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimPS05951.fq.gz -o ./denovo-m4M3n4-out -i 18 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimPS05951.fq.gz'
+  Sample ID: 18
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 1229 reads; formed:
+  7 stacks representing 38 primary reads (3.1%)
+  1159 secondary stacks representing 1191 secondary reads (96.9%)
+
+Stack coverage: mean=5.43; stdev=1.68; max=9; n_reads=38(3.1%)
+Removing repetitive stacks: cov > 9 (mean+2*stdev)...
+Blacklisted 0 stacks.
+Coverage after repeat removal: mean=5.43; stdev=1.68; max=9; n_reads=38(3.1%)
+Assembling stacks (max. dist. M=3)...
+Assembled 7 stacks into 7; blacklisted 0 stacks.
+Coverage after assembling stacks: mean=5.43; stdev=1.68; max=9; n_reads=38(3.1%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=5.57; stdev=1.76; max=9; n_reads=39(3.2%)
+
+Final coverage: mean=5.57; stdev=1.76; max=9; n_reads=39(3.2%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 19 of 53 'jimTNHC05804'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05804.fq.gz -o ./denovo-m4M3n4-out -i 19 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05804.fq.gz'
+  Sample ID: 19
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 754997 reads; formed:
+  49455 stacks representing 413655 primary reads (54.8%)
+  259369 secondary stacks representing 341342 secondary reads (45.2%)
+
+Stack coverage: mean=8.36; stdev=25.20; max=2415; n_reads=413655(54.8%)
+Removing repetitive stacks: cov > 59 (mean+2*stdev)...
+Blacklisted 2282 stacks.
+Coverage after repeat removal: mean=7.27; stdev=4.17; max=59; n_reads=342995(45.4%)
+Assembling stacks (max. dist. M=3)...
+Assembled 47173 stacks into 41992; blacklisted 239 stacks.
+Coverage after assembling stacks: mean=7.51; stdev=4.37; max=86; n_reads=312760(41.4%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=9.27; stdev=15.68; max=1977; n_reads=386007(51.1%)
+
+Final coverage: mean=9.27; stdev=15.68; max=1977; n_reads=386007(51.1%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 20 of 53 'jimTNHC05805'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05805.fq.gz -o ./denovo-m4M3n4-out -i 20 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05805.fq.gz'
+  Sample ID: 20
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1002616 reads; formed:
+  63980 stacks representing 584534 primary reads (58.3%)
+  318874 secondary stacks representing 418082 secondary reads (41.7%)
+
+Stack coverage: mean=9.14; stdev=31.95; max=3976; n_reads=584534(58.3%)
+Removing repetitive stacks: cov > 74 (mean+2*stdev)...
+Blacklisted 2719 stacks.
+Coverage after repeat removal: mean=8.08; stdev=5.28; max=74; n_reads=494738(49.3%)
+Assembling stacks (max. dist. M=3)...
+Assembled 61261 stacks into 53654; blacklisted 315 stacks.
+Coverage after assembling stacks: mean=8.42; stdev=5.52; max=201; n_reads=448281(44.7%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=10.12; stdev=15.62; max=2682; n_reads=538507(53.7%)
+
+Final coverage: mean=10.12; stdev=15.62; max=2682; n_reads=538507(53.7%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 21 of 53 'jimTNHC05806'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05806.fq.gz -o ./denovo-m4M3n4-out -i 21 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05806.fq.gz'
+  Sample ID: 21
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1765808 reads; formed:
+  95326 stacks representing 1238950 primary reads (70.2%)
+  417511 secondary stacks representing 526858 secondary reads (29.8%)
+
+Stack coverage: mean=13.00; stdev=39.64; max=4806; n_reads=1238950(70.2%)
+Removing repetitive stacks: cov > 93 (mean+2*stdev)...
+Blacklisted 4136 stacks.
+Coverage after repeat removal: mean=11.78; stdev=8.58; max=93; n_reads=1073920(60.8%)
+Assembling stacks (max. dist. M=3)...
+Assembled 91190 stacks into 77812; blacklisted 462 stacks.
+Coverage after assembling stacks: mean=12.77; stdev=9.29; max=158; n_reads=985163(55.8%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=14.88; stdev=17.53; max=2911; n_reads=1148683(65.1%)
+
+Final coverage: mean=14.88; stdev=17.53; max=2911; n_reads=1148683(65.1%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 22 of 53 'jimTNHC05807'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05807.fq.gz -o ./denovo-m4M3n4-out -i 22 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05807.fq.gz'
+  Sample ID: 22
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...2M...
+Loaded 2261015 reads; formed:
+  110494 stacks representing 1571484 primary reads (69.5%)
+  554775 secondary stacks representing 689531 secondary reads (30.5%)
+
+Stack coverage: mean=14.22; stdev=47.90; max=8163; n_reads=1571484(69.5%)
+Removing repetitive stacks: cov > 111 (mean+2*stdev)...
+Blacklisted 4980 stacks.
+Coverage after repeat removal: mean=12.81; stdev=9.97; max=111; n_reads=1351755(59.8%)
+Assembling stacks (max. dist. M=3)...
+Assembled 105514 stacks into 88645; blacklisted 570 stacks.
+Coverage after assembling stacks: mean=14.05; stdev=10.90; max=244; n_reads=1234943(54.6%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=16.67; stdev=15.77; max=1431; n_reads=1464948(64.8%)
+
+Final coverage: mean=16.67; stdev=15.77; max=1431; n_reads=1464948(64.8%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 23 of 53 'jimTNHC05808'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05808.fq.gz -o ./denovo-m4M3n4-out -i 23 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05808.fq.gz'
+  Sample ID: 23
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 340077 reads; formed:
+  20849 stacks representing 143628 primary reads (42.2%)
+  143532 secondary stacks representing 196449 secondary reads (57.8%)
+
+Stack coverage: mean=6.89; stdev=16.11; max=820; n_reads=143628(42.2%)
+Removing repetitive stacks: cov > 40 (mean+2*stdev)...
+Blacklisted 979 stacks.
+Coverage after repeat removal: mean=5.88; stdev=2.91; max=40; n_reads=116850(34.4%)
+Assembling stacks (max. dist. M=3)...
+Assembled 19870 stacks into 18324; blacklisted 108 stacks.
+Coverage after assembling stacks: mean=5.92; stdev=3.01; max=61; n_reads=107193(31.5%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=7.31; stdev=10.31; max=819; n_reads=132483(39.0%)
+
+Final coverage: mean=7.31; stdev=10.31; max=819; n_reads=132483(39.0%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 24 of 53 'jimTNHC05837'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05837.fq.gz -o ./denovo-m4M3n4-out -i 24 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05837.fq.gz'
+  Sample ID: 24
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...2M...
+Loaded 2029279 reads; formed:
+  104495 stacks representing 1410975 primary reads (69.5%)
+  488484 secondary stacks representing 618304 secondary reads (30.5%)
+
+Stack coverage: mean=13.50; stdev=44.57; max=4833; n_reads=1410975(69.5%)
+Removing repetitive stacks: cov > 103 (mean+2*stdev)...
+Blacklisted 4775 stacks.
+Coverage after repeat removal: mean=12.16; stdev=9.54; max=103; n_reads=1212413(59.7%)
+Assembling stacks (max. dist. M=3)...
+Assembled 99720 stacks into 85060; blacklisted 524 stacks.
+Coverage after assembling stacks: mean=13.08; stdev=10.19; max=148; n_reads=1103097(54.4%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=15.30; stdev=21.79; max=4333; n_reads=1290947(63.6%)
+
+Final coverage: mean=15.30; stdev=21.79; max=4333; n_reads=1290947(63.6%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 25 of 53 'jimTNHC05838'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05838.fq.gz -o ./denovo-m4M3n4-out -i 25 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05838.fq.gz'
+  Sample ID: 25
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1164704 reads; formed:
+  73238 stacks representing 759106 primary reads (65.2%)
+  318295 secondary stacks representing 405598 secondary reads (34.8%)
+
+Stack coverage: mean=10.36; stdev=28.62; max=2715; n_reads=759106(65.2%)
+Removing repetitive stacks: cov > 68 (mean+2*stdev)...
+Blacklisted 2969 stacks.
+Coverage after repeat removal: mean=9.36; stdev=5.83; max=68; n_reads=657733(56.5%)
+Assembling stacks (max. dist. M=3)...
+Assembled 70269 stacks into 61843; blacklisted 322 stacks.
+Coverage after assembling stacks: mean=9.91; stdev=6.23; max=127; n_reads=608060(52.2%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=11.72; stdev=10.57; max=1168; n_reads=719090(61.7%)
+
+Final coverage: mean=11.72; stdev=10.57; max=1168; n_reads=719090(61.7%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 26 of 53 'jimTNHC05839'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05839.fq.gz -o ./denovo-m4M3n4-out -i 26 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05839.fq.gz'
+  Sample ID: 26
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1751431 reads; formed:
+  93729 stacks representing 1234334 primary reads (70.5%)
+  413562 secondary stacks representing 517097 secondary reads (29.5%)
+
+Stack coverage: mean=13.17; stdev=39.54; max=4673; n_reads=1234334(70.5%)
+Removing repetitive stacks: cov > 93 (mean+2*stdev)...
+Blacklisted 3976 stacks.
+Coverage after repeat removal: mean=11.98; stdev=8.60; max=93; n_reads=1075571(61.4%)
+Assembling stacks (max. dist. M=3)...
+Assembled 89753 stacks into 77095; blacklisted 462 stacks.
+Coverage after assembling stacks: mean=12.94; stdev=9.26; max=125; n_reads=989271(56.5%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=15.08; stdev=13.86; max=1144; n_reads=1152806(65.8%)
+
+Final coverage: mean=15.08; stdev=13.86; max=1144; n_reads=1152806(65.8%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 27 of 53 'jimTNHC05840'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05840.fq.gz -o ./denovo-m4M3n4-out -i 27 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05840.fq.gz'
+  Sample ID: 27
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1145218 reads; formed:
+  72313 stacks representing 735410 primary reads (64.2%)
+  318702 secondary stacks representing 409808 secondary reads (35.8%)
+
+Stack coverage: mean=10.17; stdev=31.45; max=3580; n_reads=735410(64.2%)
+Removing repetitive stacks: cov > 74 (mean+2*stdev)...
+Blacklisted 2966 stacks.
+Coverage after repeat removal: mean=9.12; stdev=5.78; max=74; n_reads=632753(55.3%)
+Assembling stacks (max. dist. M=3)...
+Assembled 69347 stacks into 60721; blacklisted 343 stacks.
+Coverage after assembling stacks: mean=9.63; stdev=6.12; max=115; n_reads=580022(50.6%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=11.40; stdev=13.30; max=1378; n_reads=686882(60.0%)
+
+Final coverage: mean=11.40; stdev=13.30; max=1378; n_reads=686882(60.0%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 28 of 53 'jimTNHC05841'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05841.fq.gz -o ./denovo-m4M3n4-out -i 28 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05841.fq.gz'
+  Sample ID: 28
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1424728 reads; formed:
+  83017 stacks representing 970229 primary reads (68.1%)
+  358777 secondary stacks representing 454499 secondary reads (31.9%)
+
+Stack coverage: mean=11.69; stdev=33.26; max=3094; n_reads=970229(68.1%)
+Removing repetitive stacks: cov > 79 (mean+2*stdev)...
+Blacklisted 3380 stacks.
+Coverage after repeat removal: mean=10.60; stdev=7.15; max=79; n_reads=844174(59.3%)
+Assembling stacks (max. dist. M=3)...
+Assembled 79637 stacks into 69294; blacklisted 390 stacks.
+Coverage after assembling stacks: mean=11.30; stdev=7.61; max=158; n_reads=776656(54.5%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=13.21; stdev=15.75; max=3115; n_reads=908279(63.8%)
+
+Final coverage: mean=13.21; stdev=15.75; max=3115; n_reads=908279(63.8%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 29 of 53 'jimTNHC05842'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05842.fq.gz -o ./denovo-m4M3n4-out -i 29 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05842.fq.gz'
+  Sample ID: 29
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1674105 reads; formed:
+  91734 stacks representing 1148238 primary reads (68.6%)
+  418138 secondary stacks representing 525867 secondary reads (31.4%)
+
+Stack coverage: mean=12.52; stdev=38.26; max=3657; n_reads=1148238(68.6%)
+Removing repetitive stacks: cov > 90 (mean+2*stdev)...
+Blacklisted 3968 stacks.
+Coverage after repeat removal: mean=11.33; stdev=7.99; max=90; n_reads=994429(59.4%)
+Assembling stacks (max. dist. M=3)...
+Assembled 87766 stacks into 75543; blacklisted 450 stacks.
+Coverage after assembling stacks: mean=12.13; stdev=8.49; max=168; n_reads=909054(54.3%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=14.27; stdev=14.35; max=1328; n_reads=1069078(63.9%)
+
+Final coverage: mean=14.27; stdev=14.35; max=1328; n_reads=1069078(63.9%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 30 of 53 'jimTNHC05843'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05843.fq.gz -o ./denovo-m4M3n4-out -i 30 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05843.fq.gz'
+  Sample ID: 30
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1227655 reads; formed:
+  75928 stacks representing 804771 primary reads (65.6%)
+  330570 secondary stacks representing 422884 secondary reads (34.4%)
+
+Stack coverage: mean=10.60; stdev=31.72; max=3505; n_reads=804771(65.6%)
+Removing repetitive stacks: cov > 75 (mean+2*stdev)...
+Blacklisted 3206 stacks.
+Coverage after repeat removal: mean=9.53; stdev=6.14; max=75; n_reads=692705(56.4%)
+Assembling stacks (max. dist. M=3)...
+Assembled 72722 stacks into 63413; blacklisted 356 stacks.
+Coverage after assembling stacks: mean=10.09; stdev=6.49; max=105; n_reads=634931(51.7%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=11.88; stdev=11.36; max=1069; n_reads=747395(60.9%)
+
+Final coverage: mean=11.88; stdev=11.36; max=1069; n_reads=747395(60.9%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 31 of 53 'jimTNHC05844'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05844.fq.gz -o ./denovo-m4M3n4-out -i 31 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05844.fq.gz'
+  Sample ID: 31
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1479785 reads; formed:
+  84550 stacks representing 1016975 primary reads (68.7%)
+  367532 secondary stacks representing 462810 secondary reads (31.3%)
+
+Stack coverage: mean=12.03; stdev=34.74; max=4351; n_reads=1016975(68.7%)
+Removing repetitive stacks: cov > 82 (mean+2*stdev)...
+Blacklisted 3584 stacks.
+Coverage after repeat removal: mean=10.87; stdev=7.42; max=82; n_reads=880381(59.5%)
+Assembling stacks (max. dist. M=3)...
+Assembled 80966 stacks into 70234; blacklisted 404 stacks.
+Coverage after assembling stacks: mean=11.64; stdev=7.86; max=121; n_reads=810451(54.8%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=13.64; stdev=14.46; max=1745; n_reads=950099(64.2%)
+
+Final coverage: mean=13.64; stdev=14.46; max=1745; n_reads=950099(64.2%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 32 of 53 'jimTNHC05845'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05845.fq.gz -o ./denovo-m4M3n4-out -i 32 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05845.fq.gz'
+  Sample ID: 32
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...
+Loaded 1159077 reads; formed:
+  73584 stacks representing 778306 primary reads (67.1%)
+  297379 secondary stacks representing 380771 secondary reads (32.9%)
+
+Stack coverage: mean=10.58; stdev=30.53; max=3118; n_reads=778306(67.1%)
+Removing repetitive stacks: cov > 72 (mean+2*stdev)...
+Blacklisted 3168 stacks.
+Coverage after repeat removal: mean=9.52; stdev=5.93; max=72; n_reads=670497(57.8%)
+Assembling stacks (max. dist. M=3)...
+Assembled 70416 stacks into 61864; blacklisted 340 stacks.
+Coverage after assembling stacks: mean=10.10; stdev=6.35; max=116; n_reads=619747(53.5%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=11.77; stdev=10.51; max=1040; n_reads=722606(62.3%)
+
+Final coverage: mean=11.77; stdev=10.51; max=1040; n_reads=722606(62.3%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 33 of 53 'lemTNHC05887'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./lemTNHC05887.fq.gz -o ./denovo-m4M3n4-out -i 33 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './lemTNHC05887.fq.gz'
+  Sample ID: 33
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 130723 reads; formed:
+  2122 stacks representing 15462 primary reads (11.8%)
+  93624 secondary stacks representing 115261 secondary reads (88.2%)
+
+Stack coverage: mean=7.29; stdev=16.29; max=388; n_reads=15462(11.8%)
+Removing repetitive stacks: cov > 40 (mean+2*stdev)...
+Blacklisted 143 stacks.
+Coverage after repeat removal: mean=5.55; stdev=3.69; max=39; n_reads=10976(8.4%)
+Assembling stacks (max. dist. M=3)...
+Assembled 1979 stacks into 1773; blacklisted 12 stacks.
+Coverage after assembling stacks: mean=5.55; stdev=4.16; max=46; n_reads=9612(7.4%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=9.14; stdev=16.43; max=256; n_reads=15814(12.1%)
+
+Final coverage: mean=9.14; stdev=16.43; max=256; n_reads=15814(12.1%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 34 of 53 'sibTNHC05890'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./sibTNHC05890.fq.gz -o ./denovo-m4M3n4-out -i 34 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './sibTNHC05890.fq.gz'
+  Sample ID: 34
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 792776 reads; formed:
+  48661 stacks representing 378109 primary reads (47.7%)
+  314203 secondary stacks representing 414667 secondary reads (52.3%)
+
+Stack coverage: mean=7.77; stdev=25.91; max=2374; n_reads=378109(47.7%)
+Removing repetitive stacks: cov > 60 (mean+2*stdev)...
+Blacklisted 1896 stacks.
+Coverage after repeat removal: mean=6.80; stdev=3.67; max=60; n_reads=317845(40.1%)
+Assembling stacks (max. dist. M=3)...
+Assembled 46765 stacks into 42238; blacklisted 230 stacks.
+Coverage after assembling stacks: mean=6.95; stdev=3.76; max=97; n_reads=291287(36.7%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=8.35; stdev=13.79; max=1670; n_reads=349946(44.1%)
+
+Final coverage: mean=8.35; stdev=13.79; max=1670; n_reads=349946(44.1%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 35 of 53 'jimTNHC05927'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05927.fq.gz -o ./denovo-m4M3n4-out -i 35 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05927.fq.gz'
+  Sample ID: 35
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 475760 reads; formed:
+  24236 stacks representing 164686 primary reads (34.6%)
+  235505 secondary stacks representing 311074 secondary reads (65.4%)
+
+Stack coverage: mean=6.80; stdev=22.11; max=1554; n_reads=164686(34.6%)
+Removing repetitive stacks: cov > 52 (mean+2*stdev)...
+Blacklisted 1123 stacks.
+Coverage after repeat removal: mean=5.69; stdev=2.92; max=52; n_reads=131474(27.6%)
+Assembling stacks (max. dist. M=3)...
+Assembled 23113 stacks into 21153; blacklisted 138 stacks.
+Coverage after assembling stacks: mean=5.73; stdev=3.02; max=76; n_reads=119962(25.2%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=7.27; stdev=13.14; max=914; n_reads=152050(32.0%)
+
+Final coverage: mean=7.27; stdev=13.14; max=914; n_reads=152050(32.0%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 36 of 53 'jimTNHC05928'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05928.fq.gz -o ./denovo-m4M3n4-out -i 36 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05928.fq.gz'
+  Sample ID: 36
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 553949 reads; formed:
+  30932 stacks representing 218606 primary reads (39.5%)
+  253305 secondary stacks representing 335343 secondary reads (60.5%)
+
+Stack coverage: mean=7.07; stdev=22.31; max=1637; n_reads=218606(39.5%)
+Removing repetitive stacks: cov > 52 (mean+2*stdev)...
+Blacklisted 1386 stacks.
+Coverage after repeat removal: mean=5.99; stdev=3.04; max=52; n_reads=176900(31.9%)
+Assembling stacks (max. dist. M=3)...
+Assembled 29546 stacks into 26752; blacklisted 160 stacks.
+Coverage after assembling stacks: mean=6.09; stdev=3.18; max=73; n_reads=161380(29.1%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=7.55; stdev=11.24; max=1056; n_reads=199900(36.1%)
+
+Final coverage: mean=7.55; stdev=11.24; max=1056; n_reads=199900(36.1%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 37 of 53 'jimTNHC05929'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05929.fq.gz -o ./denovo-m4M3n4-out -i 37 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05929.fq.gz'
+  Sample ID: 37
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 278003 reads; formed:
+  9497 stacks representing 64770 primary reads (23.3%)
+  164494 secondary stacks representing 213233 secondary reads (76.7%)
+
+Stack coverage: mean=6.82; stdev=20.33; max=759; n_reads=64770(23.3%)
+Removing repetitive stacks: cov > 48 (mean+2*stdev)...
+Blacklisted 541 stacks.
+Coverage after repeat removal: mean=5.38; stdev=3.21; max=48; n_reads=48187(17.3%)
+Assembling stacks (max. dist. M=3)...
+Assembled 8956 stacks into 8067; blacklisted 58 stacks.
+Coverage after assembling stacks: mean=5.34; stdev=3.36; max=74; n_reads=42462(15.3%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=7.16; stdev=13.01; max=618; n_reads=56976(20.5%)
+
+Final coverage: mean=7.16; stdev=13.01; max=618; n_reads=56976(20.5%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 38 of 53 'jimTNHC05930'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05930.fq.gz -o ./denovo-m4M3n4-out -i 38 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05930.fq.gz'
+  Sample ID: 38
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 549347 reads; formed:
+  28824 stacks representing 203240 primary reads (37.0%)
+  264177 secondary stacks representing 346107 secondary reads (63.0%)
+
+Stack coverage: mean=7.05; stdev=23.90; max=1749; n_reads=203240(37.0%)
+Removing repetitive stacks: cov > 55 (mean+2*stdev)...
+Blacklisted 1341 stacks.
+Coverage after repeat removal: mean=5.92; stdev=3.13; max=55; n_reads=162579(29.6%)
+Assembling stacks (max. dist. M=3)...
+Assembled 27483 stacks into 24975; blacklisted 153 stacks.
+Coverage after assembling stacks: mean=5.97; stdev=3.21; max=69; n_reads=147719(26.9%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=7.52; stdev=10.95; max=965; n_reads=185893(33.8%)
+
+Final coverage: mean=7.52; stdev=10.95; max=965; n_reads=185893(33.8%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 39 of 53 'jimTNHC05931'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05931.fq.gz -o ./denovo-m4M3n4-out -i 39 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05931.fq.gz'
+  Sample ID: 39
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 399420 reads; formed:
+  17666 stacks representing 120173 primary reads (30.1%)
+  212735 secondary stacks representing 279247 secondary reads (69.9%)
+
+Stack coverage: mean=6.80; stdev=21.52; max=1039; n_reads=120173(30.1%)
+Removing repetitive stacks: cov > 50 (mean+2*stdev)...
+Blacklisted 861 stacks.
+Coverage after repeat removal: mean=5.57; stdev=3.05; max=50; n_reads=93673(23.5%)
+Assembling stacks (max. dist. M=3)...
+Assembled 16805 stacks into 15317; blacklisted 96 stacks.
+Coverage after assembling stacks: mean=5.55; stdev=2.98; max=74; n_reads=84112(21.1%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=7.18; stdev=14.20; max=937; n_reads=108867(27.3%)
+
+Final coverage: mean=7.18; stdev=14.20; max=937; n_reads=108867(27.3%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 40 of 53 'jimTNHC05932'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05932.fq.gz -o ./denovo-m4M3n4-out -i 40 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05932.fq.gz'
+  Sample ID: 40
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 461203 reads; formed:
+  24568 stacks representing 167485 primary reads (36.3%)
+  221070 secondary stacks representing 293718 secondary reads (63.7%)
+
+Stack coverage: mean=6.82; stdev=21.26; max=1203; n_reads=167485(36.3%)
+Removing repetitive stacks: cov > 50 (mean+2*stdev)...
+Blacklisted 1062 stacks.
+Coverage after repeat removal: mean=5.77; stdev=2.93; max=50; n_reads=135666(29.4%)
+Assembling stacks (max. dist. M=3)...
+Assembled 23506 stacks into 21363; blacklisted 134 stacks.
+Coverage after assembling stacks: mean=5.84; stdev=3.03; max=76; n_reads=123537(26.8%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=7.12; stdev=8.63; max=720; n_reads=150554(32.6%)
+
+Final coverage: mean=7.12; stdev=8.63; max=720; n_reads=150554(32.6%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 41 of 53 'jimTNHC05933'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05933.fq.gz -o ./denovo-m4M3n4-out -i 41 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05933.fq.gz'
+  Sample ID: 41
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 406800 reads; formed:
+  18721 stacks representing 124518 primary reads (30.6%)
+  217585 secondary stacks representing 282282 secondary reads (69.4%)
+
+Stack coverage: mean=6.65; stdev=18.44; max=953; n_reads=124518(30.6%)
+Removing repetitive stacks: cov > 44 (mean+2*stdev)...
+Blacklisted 924 stacks.
+Coverage after repeat removal: mean=5.57; stdev=2.74; max=44; n_reads=99052(24.3%)
+Assembling stacks (max. dist. M=3)...
+Assembled 17797 stacks into 16317; blacklisted 97 stacks.
+Coverage after assembling stacks: mean=5.60; stdev=2.85; max=57; n_reads=90439(22.2%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=7.20; stdev=12.09; max=877; n_reads=116203(28.6%)
+
+Final coverage: mean=7.20; stdev=12.09; max=877; n_reads=116203(28.6%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 42 of 53 'jimTNHC05934'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05934.fq.gz -o ./denovo-m4M3n4-out -i 42 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05934.fq.gz'
+  Sample ID: 42
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 227567 reads; formed:
+  6618 stacks representing 45213 primary reads (19.9%)
+  142753 secondary stacks representing 182354 secondary reads (80.1%)
+
+Stack coverage: mean=6.83; stdev=20.76; max=809; n_reads=45213(19.9%)
+Removing repetitive stacks: cov > 49 (mean+2*stdev)...
+Blacklisted 401 stacks.
+Coverage after repeat removal: mean=5.29; stdev=3.13; max=48; n_reads=32910(14.5%)
+Assembling stacks (max. dist. M=3)...
+Assembled 6217 stacks into 5605; blacklisted 49 stacks.
+Coverage after assembling stacks: mean=5.28; stdev=3.30; max=66; n_reads=29125(12.8%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=7.53; stdev=15.51; max=541; n_reads=41532(18.3%)
+
+Final coverage: mean=7.53; stdev=15.51; max=541; n_reads=41532(18.3%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 43 of 53 'jimTNHC05935'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05935.fq.gz -o ./denovo-m4M3n4-out -i 43 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05935.fq.gz'
+  Sample ID: 43
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 376247 reads; formed:
+  16835 stacks representing 112093 primary reads (29.8%)
+  204352 secondary stacks representing 264154 secondary reads (70.2%)
+
+Stack coverage: mean=6.66; stdev=18.91; max=893; n_reads=112093(29.8%)
+Removing repetitive stacks: cov > 45 (mean+2*stdev)...
+Blacklisted 793 stacks.
+Coverage after repeat removal: mean=5.53; stdev=2.79; max=45; n_reads=88676(23.6%)
+Assembling stacks (max. dist. M=3)...
+Assembled 16042 stacks into 14660; blacklisted 91 stacks.
+Coverage after assembling stacks: mean=5.56; stdev=2.88; max=58; n_reads=80553(21.4%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=7.30; stdev=17.15; max=1440; n_reads=105755(28.1%)
+
+Final coverage: mean=7.30; stdev=17.15; max=1440; n_reads=105755(28.1%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 44 of 53 'jimTNHC05936'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05936.fq.gz -o ./denovo-m4M3n4-out -i 44 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05936.fq.gz'
+  Sample ID: 44
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 385743 reads; formed:
+  17478 stacks representing 116416 primary reads (30.2%)
+  206480 secondary stacks representing 269327 secondary reads (69.8%)
+
+Stack coverage: mean=6.66; stdev=19.60; max=981; n_reads=116416(30.2%)
+Removing repetitive stacks: cov > 46 (mean+2*stdev)...
+Blacklisted 808 stacks.
+Coverage after repeat removal: mean=5.51; stdev=2.80; max=45; n_reads=91901(23.8%)
+Assembling stacks (max. dist. M=3)...
+Assembled 16670 stacks into 15246; blacklisted 106 stacks.
+Coverage after assembling stacks: mean=5.51; stdev=2.82; max=49; n_reads=82980(21.5%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=7.08; stdev=12.10; max=613; n_reads=106616(27.6%)
+
+Final coverage: mean=7.08; stdev=12.10; max=613; n_reads=106616(27.6%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 45 of 53 'jimTNHC05937'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./jimTNHC05937.fq.gz -o ./denovo-m4M3n4-out -i 45 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './jimTNHC05937.fq.gz'
+  Sample ID: 45
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 374841 reads; formed:
+  18484 stacks representing 124706 primary reads (33.3%)
+  190306 secondary stacks representing 250135 secondary reads (66.7%)
+
+Stack coverage: mean=6.75; stdev=33.12; max=3226; n_reads=124706(33.3%)
+Removing repetitive stacks: cov > 73 (mean+2*stdev)...
+Blacklisted 557 stacks.
+Coverage after repeat removal: mean=5.73; stdev=3.85; max=72; n_reads=102791(27.4%)
+Assembling stacks (max. dist. M=3)...
+Assembled 17927 stacks into 16164; blacklisted 111 stacks.
+Coverage after assembling stacks: mean=5.63; stdev=3.31; max=96; n_reads=90174(24.1%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=7.02; stdev=10.25; max=673; n_reads=112293(30.0%)
+
+Final coverage: mean=7.02; stdev=10.25; max=673; n_reads=112293(30.0%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 46 of 53 'sibTNHC05938'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./sibTNHC05938.fq.gz -o ./denovo-m4M3n4-out -i 46 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './sibTNHC05938.fq.gz'
+  Sample ID: 46
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 740263 reads; formed:
+  41358 stacks representing 321017 primary reads (43.4%)
+  325790 secondary stacks representing 419246 secondary reads (56.6%)
+
+Stack coverage: mean=7.76; stdev=43.79; max=5854; n_reads=321017(43.4%)
+Removing repetitive stacks: cov > 96 (mean+2*stdev)...
+Blacklisted 1345 stacks.
+Coverage after repeat removal: mean=6.68; stdev=4.15; max=96; n_reads=267480(36.1%)
+Assembling stacks (max. dist. M=3)...
+Assembled 40013 stacks into 35176; blacklisted 235 stacks.
+Coverage after assembling stacks: mean=6.73; stdev=3.63; max=82; n_reads=234460(31.7%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=8.24; stdev=9.35; max=766; n_reads=287374(38.8%)
+
+Final coverage: mean=8.24; stdev=9.35; max=766; n_reads=287374(38.8%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 47 of 53 'sibTNHC05939'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./sibTNHC05939.fq.gz -o ./denovo-m4M3n4-out -i 47 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './sibTNHC05939.fq.gz'
+  Sample ID: 47
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 336232 reads; formed:
+  15776 stacks representing 104080 primary reads (31.0%)
+  176590 secondary stacks representing 232152 secondary reads (69.0%)
+
+Stack coverage: mean=6.60; stdev=31.26; max=2857; n_reads=104080(31.0%)
+Removing repetitive stacks: cov > 70 (mean+2*stdev)...
+Blacklisted 451 stacks.
+Coverage after repeat removal: mean=5.60; stdev=3.75; max=70; n_reads=85846(25.5%)
+Assembling stacks (max. dist. M=3)...
+Assembled 15325 stacks into 13801; blacklisted 108 stacks.
+Coverage after assembling stacks: mean=5.48; stdev=3.11; max=75; n_reads=74859(22.3%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=6.93; stdev=10.28; max=558; n_reads=94642(28.1%)
+
+Final coverage: mean=6.93; stdev=10.28; max=558; n_reads=94642(28.1%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 48 of 53 'sibTNHC05940'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./sibTNHC05940.fq.gz -o ./denovo-m4M3n4-out -i 48 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './sibTNHC05940.fq.gz'
+  Sample ID: 48
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 347336 reads; formed:
+  16551 stacks representing 110158 primary reads (31.7%)
+  180796 secondary stacks representing 237178 secondary reads (68.3%)
+
+Stack coverage: mean=6.66; stdev=31.84; max=2703; n_reads=110158(31.7%)
+Removing repetitive stacks: cov > 71 (mean+2*stdev)...
+Blacklisted 469 stacks.
+Coverage after repeat removal: mean=5.66; stdev=3.91; max=71; n_reads=90944(26.2%)
+Assembling stacks (max. dist. M=3)...
+Assembled 16082 stacks into 14382; blacklisted 120 stacks.
+Coverage after assembling stacks: mean=5.52; stdev=3.22; max=94; n_reads=78509(22.6%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=6.94; stdev=12.25; max=721; n_reads=98653(28.4%)
+
+Final coverage: mean=6.94; stdev=12.25; max=721; n_reads=98653(28.4%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 49 of 53 'sibTNHC05941'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./sibTNHC05941.fq.gz -o ./denovo-m4M3n4-out -i 49 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './sibTNHC05941.fq.gz'
+  Sample ID: 49
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...
+Loaded 728689 reads; formed:
+  43200 stacks representing 329891 primary reads (45.3%)
+  302361 secondary stacks representing 398798 secondary reads (54.7%)
+
+Stack coverage: mean=7.64; stdev=45.70; max=6719; n_reads=329891(45.3%)
+Removing repetitive stacks: cov > 100 (mean+2*stdev)...
+Blacklisted 1260 stacks.
+Coverage after repeat removal: mean=6.64; stdev=4.47; max=99; n_reads=278550(38.2%)
+Assembling stacks (max. dist. M=3)...
+Assembled 41940 stacks into 36971; blacklisted 242 stacks.
+Coverage after assembling stacks: mean=6.65; stdev=3.83; max=114; n_reads=243934(33.5%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=8.00; stdev=9.01; max=695; n_reads=293165(40.2%)
+
+Final coverage: mean=8.00; stdev=9.01; max=695; n_reads=293165(40.2%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 50 of 53 'limpo05_R1'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./limpo05_R1.fq.gz -o ./denovo-m4M3n4-out -i 50 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './limpo05_R1.fq.gz'
+  Sample ID: 50
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...2M...3M...4M...Warning: Input reads contained 1491 uncalled nucleotides.
+
+Loaded 4392051 reads; formed:
+  161887 stacks representing 3290705 primary reads (74.9%)
+  956888 secondary stacks representing 1101346 secondary reads (25.1%)
+
+Stack coverage: mean=20.33; stdev=409.76; max=155601; n_reads=3290705(74.9%)
+Removing repetitive stacks: cov > 840 (mean+2*stdev)...
+Blacklisted 6306 stacks.
+Coverage after repeat removal: mean=16.80; stdev=21.41; max=814; n_reads=2614314(59.5%)
+Assembling stacks (max. dist. M=3)...
+Assembled 155581 stacks into 115275; blacklisted 941 stacks.
+Coverage after assembling stacks: mean=18.90; stdev=18.60; max=661; n_reads=2159802(49.2%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=22.28; stdev=24.07; max=1711; n_reads=2546143(58.0%)
+
+Final coverage: mean=22.28; stdev=24.07; max=1711; n_reads=2546143(58.0%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 51 of 53 'perdi07_R1'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./perdi07_R1.fq.gz -o ./denovo-m4M3n4-out -i 51 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './perdi07_R1.fq.gz'
+  Sample ID: 51
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...2M...3M...4M...Warning: Input reads contained 20210 uncalled nucleotides.
+
+Loaded 4052009 reads; formed:
+  208012 stacks representing 2910953 primary reads (71.8%)
+  901034 secondary stacks representing 1141056 secondary reads (28.2%)
+
+Stack coverage: mean=13.99; stdev=63.45; max=10107; n_reads=2910953(71.8%)
+Removing repetitive stacks: cov > 141 (mean+2*stdev)...
+Blacklisted 8266 stacks.
+Coverage after repeat removal: mean=12.32; stdev=11.41; max=141; n_reads=2461754(60.8%)
+Assembling stacks (max. dist. M=3)...
+Assembled 199746 stacks into 171542; blacklisted 1029 stacks.
+Coverage after assembling stacks: mean=13.05; stdev=12.06; max=268; n_reads=2219909(54.8%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=14.65; stdev=14.90; max=1613; n_reads=2492474(61.5%)
+
+Final coverage: mean=14.65; stdev=14.90; max=1613; n_reads=2492474(61.5%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 52 of 53 'santa11_R1'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./santa11_R1.fq.gz -o ./denovo-m4M3n4-out -i 52 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './santa11_R1.fq.gz'
+  Sample ID: 52
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...2M...Warning: Input reads contained 5382 uncalled nucleotides.
+
+Loaded 2628803 reads; formed:
+  119642 stacks representing 1639810 primary reads (62.4%)
+  800164 secondary stacks representing 988993 secondary reads (37.6%)
+
+Stack coverage: mean=13.71; stdev=148.34; max=43899; n_reads=1639810(62.4%)
+Removing repetitive stacks: cov > 311 (mean+2*stdev)...
+Blacklisted 5126 stacks.
+Coverage after repeat removal: mean=11.55; stdev=12.47; max=304; n_reads=1322545(50.3%)
+Assembling stacks (max. dist. M=3)...
+Assembled 114516 stacks into 93605; blacklisted 684 stacks.
+Coverage after assembling stacks: mean=12.23; stdev=11.90; max=330; n_reads=1135358(43.2%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=14.87; stdev=23.99; max=4266; n_reads=1380406(52.5%)
+
+Final coverage: mean=14.87; stdev=23.99; max=4266; n_reads=1380406(52.5%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Sample 53 of 53 'teres04_R1'
+----------
+/usr/local/bin/ustacks -t gzfastq -f ./teres04_R1.fq.gz -o ./denovo-m4M3n4-out -i 53 -m 4 -M 3
+ustacks parameters selected:
+  Input file: './teres04_R1.fq.gz'
+  Sample ID: 53
+  Min depth of coverage to create a stack (m): 4
+  Repeat removal algorithm: enabled
+  Max distance allowed between stacks (M): 3
+  Max distance allowed to align secondary reads: 5
+  Max number of stacks allowed per de novo locus: 3
+  Deleveraging algorithm: disabled
+  Gapped assembly: disabled
+  Model type: SNP
+  Alpha significance level for model: 0.05
+
+Loading RAD-Tags...1M...2M...3M...Warning: Input reads contained 6630 uncalled nucleotides.
+
+Loaded 3918531 reads; formed:
+  159612 stacks representing 2825495 primary reads (72.1%)
+  907618 secondary stacks representing 1093036 secondary reads (27.9%)
+
+Stack coverage: mean=17.70; stdev=222.01; max=78977; n_reads=2825495(72.1%)
+Removing repetitive stacks: cov > 462 (mean+2*stdev)...
+Blacklisted 7500 stacks.
+Coverage after repeat removal: mean=14.84; stdev=16.74; max=462; n_reads=2257496(57.6%)
+Assembling stacks (max. dist. M=3)...
+Assembled 152112 stacks into 115697; blacklisted 914 stacks.
+Coverage after assembling stacks: mean=16.45; stdev=16.21; max=853; n_reads=1886505(48.1%)
+Merging secondary stacks (max. dist. N=5 from consensus)...
+Coverage after merging secondary stacks: mean=19.17; stdev=22.29; max=1865; n_reads=2198632(56.1%)
+
+Final coverage: mean=19.17; stdev=22.29; max=1865; n_reads=2198632(56.1%)
+Calling consensus sequences and haplotypes for catalog assembly...
+Writing tags, SNPs, and alleles files...
+Refetching read IDs...done.
+ustacks is done.
+
+Depths of Coverage for Processed Samples:
+jimPS172: 11.42x
+jimPS173: 11.88x
+jimPS174: 13.99x
+jimPS175: 16.55x
+jimPS176: 14.45x
+jimPS177: 11.60x
+jimPS178: 11.70x
+jimPS179: 10.62x
+jimPS180: 10.36x
+lemPS185: 12.61x
+lemPS188: 14.92x
+jimPS193: 15.24x
+jimPS196: 13.55x
+rorPS283: 10.20x
+rorPS284: 15.30x
+rorPS285: 12.40x
+rorPS297: 9.34x
+jimPS05951: 5.57x
+jimTNHC05804: 9.27x
+jimTNHC05805: 10.12x
+jimTNHC05806: 14.88x
+jimTNHC05807: 16.67x
+jimTNHC05808: 7.31x
+jimTNHC05837: 15.30x
+jimTNHC05838: 11.72x
+jimTNHC05839: 15.08x
+jimTNHC05840: 11.40x
+jimTNHC05841: 13.21x
+jimTNHC05842: 14.27x
+jimTNHC05843: 11.88x
+jimTNHC05844: 13.64x
+jimTNHC05845: 11.77x
+lemTNHC05887: 9.14x
+sibTNHC05890: 8.35x
+jimTNHC05927: 7.27x
+jimTNHC05928: 7.55x
+jimTNHC05929: 7.16x
+jimTNHC05930: 7.52x
+jimTNHC05931: 7.18x
+jimTNHC05932: 7.12x
+jimTNHC05933: 7.20x
+jimTNHC05934: 7.53x
+jimTNHC05935: 7.30x
+jimTNHC05936: 7.08x
+jimTNHC05937: 7.02x
+sibTNHC05938: 8.24x
+sibTNHC05939: 6.93x
+sibTNHC05940: 6.94x
+sibTNHC05941: 8.00x
+limpo05_R1: 22.28x
+perdi07_R1: 14.65x
+santa11_R1: 14.87x
+teres04_R1: 19.17x
+
+cstacks
+==========
+/usr/local/bin/cstacks -P ./denovo-m4M3n4-out -n 4 -M ./pop_map_outgroup.txt
+
+cstacks parameters selected:
+  Database/Batch ID: 1
+  Loci matched based on sequence identity.
+  Number of mismatches allowed between stacks: 4
+  Gapped alignments: disabled
+Constructing catalog from 53 samples.
+
+Initializing new catalog...
+  Parsing ./denovo-m4M3n4-out/jimPS172.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS172.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS172.alleles.tsv.gz
+  75129 loci were newly added to the catalog.
+
+Processing sample ./denovo-m4M3n4-out/jimPS173 [2 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS173.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS173.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS173.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  75129 loci in the catalog, 6284665 kmers in the catalog hash.
+Merging matches into catalog...
+  34156 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  34271 loci were newly added to the catalog.
+  442 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimPS174 [3 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS174.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS174.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS174.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  109400 loci in the catalog, 9101910 kmers in the catalog hash.
+Merging matches into catalog...
+  50778 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  36519 loci were newly added to the catalog.
+  513 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimPS175 [4 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS175.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS175.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS175.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  145919 loci in the catalog, 12056454 kmers in the catalog hash.
+Merging matches into catalog...
+  64535 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  35703 loci were newly added to the catalog.
+  540 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimPS176 [5 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS176.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS176.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS176.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  181622 loci in the catalog, 14898643 kmers in the catalog hash.
+Merging matches into catalog...
+  65834 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  27504 loci were newly added to the catalog.
+  515 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimPS177 [6 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS177.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS177.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS177.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  209126 loci in the catalog, 17046764 kmers in the catalog hash.
+Merging matches into catalog...
+  58096 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  16839 loci were newly added to the catalog.
+  450 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimPS178 [7 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS178.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS178.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS178.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  225965 loci in the catalog, 18378921 kmers in the catalog hash.
+Merging matches into catalog...
+  58444 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  13192 loci were newly added to the catalog.
+  456 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimPS179 [8 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS179.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS179.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS179.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  239157 loci in the catalog, 19430039 kmers in the catalog hash.
+Merging matches into catalog...
+  44108 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  5884 loci were newly added to the catalog.
+  357 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimPS180 [9 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS180.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS180.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS180.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  245041 loci in the catalog, 19900413 kmers in the catalog hash.
+Merging matches into catalog...
+  47166 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  12169 loci were newly added to the catalog.
+  385 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/lemPS185 [10 of 53]
+  Parsing ./denovo-m4M3n4-out/lemPS185.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/lemPS185.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/lemPS185.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  257210 loci in the catalog, 20817664 kmers in the catalog hash.
+Merging matches into catalog...
+  18886 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  51698 loci were newly added to the catalog.
+  796 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/lemPS188 [11 of 53]
+  Parsing ./denovo-m4M3n4-out/lemPS188.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/lemPS188.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/lemPS188.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  308908 loci in the catalog, 24892262 kmers in the catalog hash.
+Merging matches into catalog...
+  47521 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  40204 loci were newly added to the catalog.
+  912 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimPS193 [12 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS193.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS193.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS193.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  349112 loci in the catalog, 28045411 kmers in the catalog hash.
+Merging matches into catalog...
+  78806 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  20711 loci were newly added to the catalog.
+  542 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimPS196 [13 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS196.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS196.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS196.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  369823 loci in the catalog, 29617031 kmers in the catalog hash.
+Merging matches into catalog...
+  72844 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  15361 loci were newly added to the catalog.
+  490 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/rorPS283 [14 of 53]
+  Parsing ./denovo-m4M3n4-out/rorPS283.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS283.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS283.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  385184 loci in the catalog, 30800869 kmers in the catalog hash.
+Merging matches into catalog...
+  3522 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  48803 loci were newly added to the catalog.
+  132 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/rorPS284 [15 of 53]
+  Parsing ./denovo-m4M3n4-out/rorPS284.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS284.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS284.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  433987 loci in the catalog, 34677386 kmers in the catalog hash.
+Merging matches into catalog...
+  34392 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  64163 loci were newly added to the catalog.
+  274 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/rorPS285 [16 of 53]
+  Parsing ./denovo-m4M3n4-out/rorPS285.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS285.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS285.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  498150 loci in the catalog, 39697947 kmers in the catalog hash.
+Merging matches into catalog...
+  49488 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  20139 loci were newly added to the catalog.
+  251 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/rorPS297 [17 of 53]
+  Parsing ./denovo-m4M3n4-out/rorPS297.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS297.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS297.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  518289 loci in the catalog, 41341524 kmers in the catalog hash.
+Merging matches into catalog...
+  36328 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  6070 loci were newly added to the catalog.
+  199 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimPS05951 [18 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS05951.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS05951.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS05951.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  524359 loci in the catalog, 41857739 kmers in the catalog hash.
+Merging matches into catalog...
+  2 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  5 loci were newly added to the catalog.
+  0 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05804 [19 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05804.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05804.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05804.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  524364 loci in the catalog, 41857927 kmers in the catalog hash.
+Merging matches into catalog...
+  37855 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  3453 loci were newly added to the catalog.
+  311 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05805 [20 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05805.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05805.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05805.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  527817 loci in the catalog, 42129022 kmers in the catalog hash.
+Merging matches into catalog...
+  47772 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  5070 loci were newly added to the catalog.
+  392 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05806 [21 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05806.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05806.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05806.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  532887 loci in the catalog, 42512572 kmers in the catalog hash.
+Merging matches into catalog...
+  69859 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  6894 loci were newly added to the catalog.
+  420 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05807 [22 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05807.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05807.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05807.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  539781 loci in the catalog, 43042002 kmers in the catalog hash.
+Merging matches into catalog...
+  78689 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  8708 loci were newly added to the catalog.
+  474 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05808 [23 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05808.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05808.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05808.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  548489 loci in the catalog, 43717358 kmers in the catalog hash.
+Merging matches into catalog...
+  17442 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  497 loci were newly added to the catalog.
+  183 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05837 [24 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05837.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05837.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05837.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  548986 loci in the catalog, 43759113 kmers in the catalog hash.
+Merging matches into catalog...
+  74595 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  9293 loci were newly added to the catalog.
+  469 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05838 [25 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05838.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05838.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05838.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  558279 loci in the catalog, 44466077 kmers in the catalog hash.
+Merging matches into catalog...
+  57747 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  3267 loci were newly added to the catalog.
+  345 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05839 [26 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05839.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05839.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05839.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  561546 loci in the catalog, 44728520 kmers in the catalog hash.
+Merging matches into catalog...
+  71336 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  4733 loci were newly added to the catalog.
+  392 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05840 [27 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05840.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05840.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05840.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  566279 loci in the catalog, 45099740 kmers in the catalog hash.
+Merging matches into catalog...
+  57503 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  2373 loci were newly added to the catalog.
+  360 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05841 [28 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05841.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05841.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05841.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  568652 loci in the catalog, 45287563 kmers in the catalog hash.
+Merging matches into catalog...
+  65300 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  3048 loci were newly added to the catalog.
+  388 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05842 [29 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05842.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05842.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05842.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  571700 loci in the catalog, 45525391 kmers in the catalog hash.
+Merging matches into catalog...
+  70679 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  3888 loci were newly added to the catalog.
+  359 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05843 [30 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05843.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05843.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05843.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  575588 loci in the catalog, 45823412 kmers in the catalog hash.
+Merging matches into catalog...
+  60292 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  2277 loci were newly added to the catalog.
+  329 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05844 [31 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05844.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05844.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05844.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  577865 loci in the catalog, 45997170 kmers in the catalog hash.
+Merging matches into catalog...
+  66456 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  2811 loci were newly added to the catalog.
+  382 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05845 [32 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05845.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05845.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05845.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  580676 loci in the catalog, 46215489 kmers in the catalog hash.
+Merging matches into catalog...
+  59257 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  1780 loci were newly added to the catalog.
+  331 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/lemTNHC05887 [33 of 53]
+  Parsing ./denovo-m4M3n4-out/lemTNHC05887.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/lemTNHC05887.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/lemTNHC05887.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  582456 loci in the catalog, 46354808 kmers in the catalog hash.
+Merging matches into catalog...
+  1379 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  306 loci were newly added to the catalog.
+  46 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/sibTNHC05890 [34 of 53]
+  Parsing ./denovo-m4M3n4-out/sibTNHC05890.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05890.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05890.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  582762 loci in the catalog, 46380826 kmers in the catalog hash.
+Merging matches into catalog...
+  38260 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  3278 loci were newly added to the catalog.
+  359 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05927 [35 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05927.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05927.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05927.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  586040 loci in the catalog, 46652700 kmers in the catalog hash.
+Merging matches into catalog...
+  20104 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  589 loci were newly added to the catalog.
+  229 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05928 [36 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05928.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05928.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05928.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  586629 loci in the catalog, 46700541 kmers in the catalog hash.
+Merging matches into catalog...
+  25519 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  722 loci were newly added to the catalog.
+  250 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05929 [37 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05929.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05929.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05929.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  587351 loci in the catalog, 46762790 kmers in the catalog hash.
+Merging matches into catalog...
+  7641 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  183 loci were newly added to the catalog.
+  132 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05930 [38 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05930.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05930.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05930.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  587534 loci in the catalog, 46778397 kmers in the catalog hash.
+Merging matches into catalog...
+  23769 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  685 loci were newly added to the catalog.
+  277 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05931 [39 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05931.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05931.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05931.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  588219 loci in the catalog, 46833741 kmers in the catalog hash.
+Merging matches into catalog...
+  14575 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  377 loci were newly added to the catalog.
+  203 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05932 [40 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05932.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05932.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05932.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  588596 loci in the catalog, 46865591 kmers in the catalog hash.
+Merging matches into catalog...
+  20373 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  545 loci were newly added to the catalog.
+  231 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05933 [41 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05933.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05933.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05933.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  589141 loci in the catalog, 46910568 kmers in the catalog hash.
+Merging matches into catalog...
+  15577 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  355 loci were newly added to the catalog.
+  206 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05934 [42 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05934.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05934.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05934.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  589496 loci in the catalog, 46939774 kmers in the catalog hash.
+Merging matches into catalog...
+  5309 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  91 loci were newly added to the catalog.
+  113 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05935 [43 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05935.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05935.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05935.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  589587 loci in the catalog, 46948353 kmers in the catalog hash.
+Merging matches into catalog...
+  14014 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  295 loci were newly added to the catalog.
+  187 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05936 [44 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05936.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05936.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05936.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  589882 loci in the catalog, 46973927 kmers in the catalog hash.
+Merging matches into catalog...
+  14618 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  270 loci were newly added to the catalog.
+  180 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/jimTNHC05937 [45 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05937.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05937.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05937.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  590152 loci in the catalog, 46998242 kmers in the catalog hash.
+Merging matches into catalog...
+  441 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  15468 loci were newly added to the catalog.
+  94 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/sibTNHC05938 [46 of 53]
+  Parsing ./denovo-m4M3n4-out/sibTNHC05938.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05938.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05938.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  605620 loci in the catalog, 48169900 kmers in the catalog hash.
+Merging matches into catalog...
+  10255 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  24324 loci were newly added to the catalog.
+  281 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/sibTNHC05939 [47 of 53]
+  Parsing ./denovo-m4M3n4-out/sibTNHC05939.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05939.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05939.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  629944 loci in the catalog, 50006431 kmers in the catalog hash.
+Merging matches into catalog...
+  9388 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  4131 loci were newly added to the catalog.
+  133 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/sibTNHC05940 [48 of 53]
+  Parsing ./denovo-m4M3n4-out/sibTNHC05940.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05940.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05940.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  634075 loci in the catalog, 50321156 kmers in the catalog hash.
+Merging matches into catalog...
+  10239 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  3860 loci were newly added to the catalog.
+  120 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/sibTNHC05941 [49 of 53]
+  Parsing ./denovo-m4M3n4-out/sibTNHC05941.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05941.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05941.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (98 k-mers per read); 6 k-mer hits required.
+  637935 loci in the catalog, 50609673 kmers in the catalog hash.
+Merging matches into catalog...
+  23735 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  12680 loci were newly added to the catalog.
+  244 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/limpo05_R1 [50 of 53]
+  Parsing ./denovo-m4M3n4-out/limpo05_R1.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/limpo05_R1.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/limpo05_R1.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (99 k-mers per read); 7 k-mer hits required.
+  650615 loci in the catalog, 51560221 kmers in the catalog hash.
+Merging matches into catalog...
+  783 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  113425 loci were newly added to the catalog.
+  62 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/perdi07_R1 [51 of 53]
+  Parsing ./denovo-m4M3n4-out/perdi07_R1.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/perdi07_R1.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/perdi07_R1.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (99 k-mers per read); 7 k-mer hits required.
+  764040 loci in the catalog, 60559877 kmers in the catalog hash.
+Merging matches into catalog...
+  64900 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  104393 loci were newly added to the catalog.
+  857 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/santa11_R1 [52 of 53]
+  Parsing ./denovo-m4M3n4-out/santa11_R1.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/santa11_R1.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/santa11_R1.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (99 k-mers per read); 7 k-mer hits required.
+  868433 loci in the catalog, 69068611 kmers in the catalog hash.
+Merging matches into catalog...
+  68027 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  24157 loci were newly added to the catalog.
+  637 loci matched more than one catalog locus and were excluded.
+
+Processing sample ./denovo-m4M3n4-out/teres04_R1 [53 of 53]
+  Parsing ./denovo-m4M3n4-out/teres04_R1.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/teres04_R1.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/teres04_R1.alleles.tsv.gz
+Searching for sequence matches...
+  Distance allowed between stacks: 4; searching with a k-mer length of 23 (99 k-mers per read); 7 k-mer hits required.
+  892590 loci in the catalog, 71115396 kmers in the catalog hash.
+Merging matches into catalog...
+  82624 loci were matched to a catalog locus.
+  0 loci were matched to a catalog locus using gapped alignments.
+  31242 loci were newly added to the catalog.
+  803 loci matched more than one catalog locus and were excluded.
+
+Writing catalog in directory './denovo-m4M3n4-out/'.
+cstacks is done.
+
+sstacks
+==========
+/usr/local/bin/sstacks -P ./denovo-m4M3n4-out -M ./pop_map_outgroup.txt
+
+Searching for matches by sequence identity...
+  Parsing ./denovo-m4M3n4-out/batch_1.catalog.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/batch_1.catalog.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/batch_1.catalog.alleles.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimPS172' [1 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS172.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS172.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS172.alleles.tsv.gz
+Searching for sequence matches...
+75129 sample loci compared against the catalog containing 923832 loci.
+  75129 matching loci, 4 contained no verified haplotypes.
+  4 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  85092 total haplotypes examined from matching loci, 85071 verified.
+Outputing to file ./denovo-m4M3n4-out/jimPS172.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimPS173' [2 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS173.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS173.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS173.alleles.tsv.gz
+Searching for sequence matches...
+68869 sample loci compared against the catalog containing 923832 loci.
+  68744 matching loci, 89 contained no verified haplotypes.
+  49 loci matched more than one catalog locus and were excluded.
+  40 loci contained SNPs unaccounted for in the catalog and were excluded.
+  77697 total haplotypes examined from matching loci, 77503 verified.
+Outputing to file ./denovo-m4M3n4-out/jimPS173.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimPS174' [3 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS174.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS174.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS174.alleles.tsv.gz
+Searching for sequence matches...
+87810 sample loci compared against the catalog containing 923832 loci.
+  87658 matching loci, 114 contained no verified haplotypes.
+  67 loci matched more than one catalog locus and were excluded.
+  47 loci contained SNPs unaccounted for in the catalog and were excluded.
+  99521 total haplotypes examined from matching loci, 99254 verified.
+Outputing to file ./denovo-m4M3n4-out/jimPS174.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimPS175' [4 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS175.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS175.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS175.alleles.tsv.gz
+Searching for sequence matches...
+100778 sample loci compared against the catalog containing 923832 loci.
+  100559 matching loci, 109 contained no verified haplotypes.
+  63 loci matched more than one catalog locus and were excluded.
+  46 loci contained SNPs unaccounted for in the catalog and were excluded.
+  114520 total haplotypes examined from matching loci, 114297 verified.
+Outputing to file ./denovo-m4M3n4-out/jimPS175.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimPS176' [5 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS176.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS176.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS176.alleles.tsv.gz
+Searching for sequence matches...
+93853 sample loci compared against the catalog containing 923832 loci.
+  93634 matching loci, 127 contained no verified haplotypes.
+  70 loci matched more than one catalog locus and were excluded.
+  57 loci contained SNPs unaccounted for in the catalog and were excluded.
+  106349 total haplotypes examined from matching loci, 106088 verified.
+Outputing to file ./denovo-m4M3n4-out/jimPS176.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimPS177' [6 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS177.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS177.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS177.alleles.tsv.gz
+Searching for sequence matches...
+75385 sample loci compared against the catalog containing 923832 loci.
+  75226 matching loci, 141 contained no verified haplotypes.
+  108 loci matched more than one catalog locus and were excluded.
+  33 loci contained SNPs unaccounted for in the catalog and were excluded.
+  84976 total haplotypes examined from matching loci, 84640 verified.
+Outputing to file ./denovo-m4M3n4-out/jimPS177.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimPS178' [7 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS178.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS178.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS178.alleles.tsv.gz
+Searching for sequence matches...
+72092 sample loci compared against the catalog containing 923832 loci.
+  71907 matching loci, 120 contained no verified haplotypes.
+  98 loci matched more than one catalog locus and were excluded.
+  22 loci contained SNPs unaccounted for in the catalog and were excluded.
+  81225 total haplotypes examined from matching loci, 80950 verified.
+Outputing to file ./denovo-m4M3n4-out/jimPS178.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimPS179' [8 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS179.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS179.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS179.alleles.tsv.gz
+Searching for sequence matches...
+50349 sample loci compared against the catalog containing 923832 loci.
+  50230 matching loci, 127 contained no verified haplotypes.
+  112 loci matched more than one catalog locus and were excluded.
+  15 loci contained SNPs unaccounted for in the catalog and were excluded.
+  56022 total haplotypes examined from matching loci, 55699 verified.
+Outputing to file ./denovo-m4M3n4-out/jimPS179.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimPS180' [9 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS180.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS180.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS180.alleles.tsv.gz
+Searching for sequence matches...
+59720 sample loci compared against the catalog containing 923832 loci.
+  59570 matching loci, 140 contained no verified haplotypes.
+  111 loci matched more than one catalog locus and were excluded.
+  29 loci contained SNPs unaccounted for in the catalog and were excluded.
+  66975 total haplotypes examined from matching loci, 66668 verified.
+Outputing to file ./denovo-m4M3n4-out/jimPS180.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/lemPS185' [10 of 53]
+  Parsing ./denovo-m4M3n4-out/lemPS185.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/lemPS185.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/lemPS185.alleles.tsv.gz
+Searching for sequence matches...
+71380 sample loci compared against the catalog containing 923832 loci.
+  70715 matching loci, 66 contained no verified haplotypes.
+  23 loci matched more than one catalog locus and were excluded.
+  43 loci contained SNPs unaccounted for in the catalog and were excluded.
+  80355 total haplotypes examined from matching loci, 80245 verified.
+Outputing to file ./denovo-m4M3n4-out/lemPS185.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/lemPS188' [11 of 53]
+  Parsing ./denovo-m4M3n4-out/lemPS188.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/lemPS188.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/lemPS188.alleles.tsv.gz
+Searching for sequence matches...
+88637 sample loci compared against the catalog containing 923832 loci.
+  87820 matching loci, 60 contained no verified haplotypes.
+  19 loci matched more than one catalog locus and were excluded.
+  41 loci contained SNPs unaccounted for in the catalog and were excluded.
+  98972 total haplotypes examined from matching loci, 98877 verified.
+Outputing to file ./denovo-m4M3n4-out/lemPS188.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimPS193' [12 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS193.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS193.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS193.alleles.tsv.gz
+Searching for sequence matches...
+100059 sample loci compared against the catalog containing 923832 loci.
+  99772 matching loci, 158 contained no verified haplotypes.
+  132 loci matched more than one catalog locus and were excluded.
+  26 loci contained SNPs unaccounted for in the catalog and were excluded.
+  113135 total haplotypes examined from matching loci, 112746 verified.
+Outputing to file ./denovo-m4M3n4-out/jimPS193.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimPS196' [13 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS196.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS196.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS196.alleles.tsv.gz
+Searching for sequence matches...
+88695 sample loci compared against the catalog containing 923832 loci.
+  88428 matching loci, 151 contained no verified haplotypes.
+  125 loci matched more than one catalog locus and were excluded.
+  26 loci contained SNPs unaccounted for in the catalog and were excluded.
+  100720 total haplotypes examined from matching loci, 100297 verified.
+Outputing to file ./denovo-m4M3n4-out/jimPS196.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/rorPS283' [14 of 53]
+  Parsing ./denovo-m4M3n4-out/rorPS283.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS283.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS283.alleles.tsv.gz
+Searching for sequence matches...
+52457 sample loci compared against the catalog containing 923832 loci.
+  52371 matching loci, 22 contained no verified haplotypes.
+  13 loci matched more than one catalog locus and were excluded.
+  9 loci contained SNPs unaccounted for in the catalog and were excluded.
+  59260 total haplotypes examined from matching loci, 59217 verified.
+Outputing to file ./denovo-m4M3n4-out/rorPS283.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/rorPS284' [15 of 53]
+  Parsing ./denovo-m4M3n4-out/rorPS284.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS284.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS284.alleles.tsv.gz
+Searching for sequence matches...
+98829 sample loci compared against the catalog containing 923832 loci.
+  98623 matching loci, 41 contained no verified haplotypes.
+  15 loci matched more than one catalog locus and were excluded.
+  26 loci contained SNPs unaccounted for in the catalog and were excluded.
+  112619 total haplotypes examined from matching loci, 112550 verified.
+Outputing to file ./denovo-m4M3n4-out/rorPS284.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/rorPS285' [16 of 53]
+  Parsing ./denovo-m4M3n4-out/rorPS285.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS285.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS285.alleles.tsv.gz
+Searching for sequence matches...
+69878 sample loci compared against the catalog containing 923832 loci.
+  69682 matching loci, 44 contained no verified haplotypes.
+  33 loci matched more than one catalog locus and were excluded.
+  11 loci contained SNPs unaccounted for in the catalog and were excluded.
+  81452 total haplotypes examined from matching loci, 81353 verified.
+Outputing to file ./denovo-m4M3n4-out/rorPS285.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/rorPS297' [17 of 53]
+  Parsing ./denovo-m4M3n4-out/rorPS297.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS297.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/rorPS297.alleles.tsv.gz
+Searching for sequence matches...
+42597 sample loci compared against the catalog containing 923832 loci.
+  42461 matching loci, 59 contained no verified haplotypes.
+  54 loci matched more than one catalog locus and were excluded.
+  5 loci contained SNPs unaccounted for in the catalog and were excluded.
+  49135 total haplotypes examined from matching loci, 48991 verified.
+Outputing to file ./denovo-m4M3n4-out/rorPS297.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimPS05951' [18 of 53]
+  Parsing ./denovo-m4M3n4-out/jimPS05951.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS05951.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimPS05951.alleles.tsv.gz
+Searching for sequence matches...
+7 sample loci compared against the catalog containing 923832 loci.
+  7 matching loci, 0 contained no verified haplotypes.
+  0 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  7 total haplotypes examined from matching loci, 7 verified.
+Outputing to file ./denovo-m4M3n4-out/jimPS05951.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05804' [19 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05804.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05804.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05804.alleles.tsv.gz
+Searching for sequence matches...
+41619 sample loci compared against the catalog containing 923832 loci.
+  41540 matching loci, 162 contained no verified haplotypes.
+  146 loci matched more than one catalog locus and were excluded.
+  16 loci contained SNPs unaccounted for in the catalog and were excluded.
+  47289 total haplotypes examined from matching loci, 46873 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05804.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05805' [20 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05805.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05805.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05805.alleles.tsv.gz
+Searching for sequence matches...
+53234 sample loci compared against the catalog containing 923832 loci.
+  53094 matching loci, 195 contained no verified haplotypes.
+  171 loci matched more than one catalog locus and were excluded.
+  24 loci contained SNPs unaccounted for in the catalog and were excluded.
+  60544 total haplotypes examined from matching loci, 60040 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05805.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05806' [21 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05806.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05806.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05806.alleles.tsv.gz
+Searching for sequence matches...
+77173 sample loci compared against the catalog containing 923832 loci.
+  77000 matching loci, 182 contained no verified haplotypes.
+  161 loci matched more than one catalog locus and were excluded.
+  21 loci contained SNPs unaccounted for in the catalog and were excluded.
+  88457 total haplotypes examined from matching loci, 87971 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05806.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05807' [22 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05807.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05807.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05807.alleles.tsv.gz
+Searching for sequence matches...
+87871 sample loci compared against the catalog containing 923832 loci.
+  87656 matching loci, 193 contained no verified haplotypes.
+  178 loci matched more than one catalog locus and were excluded.
+  15 loci contained SNPs unaccounted for in the catalog and were excluded.
+  101847 total haplotypes examined from matching loci, 101334 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05807.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05808' [23 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05808.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05808.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05808.alleles.tsv.gz
+Searching for sequence matches...
+18122 sample loci compared against the catalog containing 923832 loci.
+  18083 matching loci, 115 contained no verified haplotypes.
+  112 loci matched more than one catalog locus and were excluded.
+  3 loci contained SNPs unaccounted for in the catalog and were excluded.
+  20228 total haplotypes examined from matching loci, 19905 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05808.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05837' [24 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05837.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05837.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05837.alleles.tsv.gz
+Searching for sequence matches...
+84357 sample loci compared against the catalog containing 923832 loci.
+  84159 matching loci, 206 contained no verified haplotypes.
+  190 loci matched more than one catalog locus and were excluded.
+  16 loci contained SNPs unaccounted for in the catalog and were excluded.
+  95779 total haplotypes examined from matching loci, 95257 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05837.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05838' [25 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05838.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05838.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05838.alleles.tsv.gz
+Searching for sequence matches...
+61359 sample loci compared against the catalog containing 923832 loci.
+  61252 matching loci, 186 contained no verified haplotypes.
+  176 loci matched more than one catalog locus and were excluded.
+  10 loci contained SNPs unaccounted for in the catalog and were excluded.
+  69388 total haplotypes examined from matching loci, 68864 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05838.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05839' [26 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05839.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05839.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05839.alleles.tsv.gz
+Searching for sequence matches...
+76461 sample loci compared against the catalog containing 923832 loci.
+  76289 matching loci, 169 contained no verified haplotypes.
+  160 loci matched more than one catalog locus and were excluded.
+  9 loci contained SNPs unaccounted for in the catalog and were excluded.
+  86915 total haplotypes examined from matching loci, 86442 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05839.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05840' [27 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05840.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05840.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05840.alleles.tsv.gz
+Searching for sequence matches...
+60236 sample loci compared against the catalog containing 923832 loci.
+  60120 matching loci, 204 contained no verified haplotypes.
+  195 loci matched more than one catalog locus and were excluded.
+  9 loci contained SNPs unaccounted for in the catalog and were excluded.
+  68145 total haplotypes examined from matching loci, 67584 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05840.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05841' [28 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05841.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05841.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05841.alleles.tsv.gz
+Searching for sequence matches...
+68736 sample loci compared against the catalog containing 923832 loci.
+  68600 matching loci, 221 contained no verified haplotypes.
+  213 loci matched more than one catalog locus and were excluded.
+  8 loci contained SNPs unaccounted for in the catalog and were excluded.
+  77686 total haplotypes examined from matching loci, 77081 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05841.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05842' [29 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05842.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05842.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05842.alleles.tsv.gz
+Searching for sequence matches...
+74926 sample loci compared against the catalog containing 923832 loci.
+  74775 matching loci, 181 contained no verified haplotypes.
+  179 loci matched more than one catalog locus and were excluded.
+  2 loci contained SNPs unaccounted for in the catalog and were excluded.
+  85215 total haplotypes examined from matching loci, 84736 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05842.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05843' [30 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05843.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05843.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05843.alleles.tsv.gz
+Searching for sequence matches...
+62898 sample loci compared against the catalog containing 923832 loci.
+  62782 matching loci, 193 contained no verified haplotypes.
+  189 loci matched more than one catalog locus and were excluded.
+  4 loci contained SNPs unaccounted for in the catalog and were excluded.
+  71299 total haplotypes examined from matching loci, 70755 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05843.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05844' [31 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05844.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05844.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05844.alleles.tsv.gz
+Searching for sequence matches...
+69649 sample loci compared against the catalog containing 923832 loci.
+  69497 matching loci, 211 contained no verified haplotypes.
+  204 loci matched more than one catalog locus and were excluded.
+  7 loci contained SNPs unaccounted for in the catalog and were excluded.
+  79207 total haplotypes examined from matching loci, 78657 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05844.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05845' [32 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05845.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05845.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05845.alleles.tsv.gz
+Searching for sequence matches...
+61368 sample loci compared against the catalog containing 923832 loci.
+  61250 matching loci, 195 contained no verified haplotypes.
+  193 loci matched more than one catalog locus and were excluded.
+  2 loci contained SNPs unaccounted for in the catalog and were excluded.
+  69421 total haplotypes examined from matching loci, 68896 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05845.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/lemTNHC05887' [33 of 53]
+  Parsing ./denovo-m4M3n4-out/lemTNHC05887.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/lemTNHC05887.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/lemTNHC05887.alleles.tsv.gz
+Searching for sequence matches...
+1731 sample loci compared against the catalog containing 923832 loci.
+  1712 matching loci, 26 contained no verified haplotypes.
+  25 loci matched more than one catalog locus and were excluded.
+  1 loci contained SNPs unaccounted for in the catalog and were excluded.
+  2089 total haplotypes examined from matching loci, 1999 verified.
+Outputing to file ./denovo-m4M3n4-out/lemTNHC05887.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/sibTNHC05890' [34 of 53]
+  Parsing ./denovo-m4M3n4-out/sibTNHC05890.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05890.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05890.alleles.tsv.gz
+Searching for sequence matches...
+41897 sample loci compared against the catalog containing 923832 loci.
+  41751 matching loci, 204 contained no verified haplotypes.
+  197 loci matched more than one catalog locus and were excluded.
+  7 loci contained SNPs unaccounted for in the catalog and were excluded.
+  46978 total haplotypes examined from matching loci, 46410 verified.
+Outputing to file ./denovo-m4M3n4-out/sibTNHC05890.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05927' [35 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05927.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05927.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05927.alleles.tsv.gz
+Searching for sequence matches...
+20922 sample loci compared against the catalog containing 923832 loci.
+  20886 matching loci, 186 contained no verified haplotypes.
+  180 loci matched more than one catalog locus and were excluded.
+  6 loci contained SNPs unaccounted for in the catalog and were excluded.
+  23773 total haplotypes examined from matching loci, 23208 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05927.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05928' [36 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05928.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05928.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05928.alleles.tsv.gz
+Searching for sequence matches...
+26491 sample loci compared against the catalog containing 923832 loci.
+  26451 matching loci, 209 contained no verified haplotypes.
+  208 loci matched more than one catalog locus and were excluded.
+  1 loci contained SNPs unaccounted for in the catalog and were excluded.
+  30232 total haplotypes examined from matching loci, 29639 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05928.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05929' [37 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05929.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05929.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05929.alleles.tsv.gz
+Searching for sequence matches...
+7956 sample loci compared against the catalog containing 923832 loci.
+  7939 matching loci, 113 contained no verified haplotypes.
+  113 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  9148 total haplotypes examined from matching loci, 8813 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05929.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05930' [38 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05930.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05930.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05930.alleles.tsv.gz
+Searching for sequence matches...
+24731 sample loci compared against the catalog containing 923832 loci.
+  24689 matching loci, 229 contained no verified haplotypes.
+  228 loci matched more than one catalog locus and were excluded.
+  1 loci contained SNPs unaccounted for in the catalog and were excluded.
+  28220 total haplotypes examined from matching loci, 27563 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05930.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05931' [39 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05931.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05931.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05931.alleles.tsv.gz
+Searching for sequence matches...
+15155 sample loci compared against the catalog containing 923832 loci.
+  15133 matching loci, 177 contained no verified haplotypes.
+  176 loci matched more than one catalog locus and were excluded.
+  1 loci contained SNPs unaccounted for in the catalog and were excluded.
+  17124 total haplotypes examined from matching loci, 16611 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05931.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05932' [40 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05932.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05932.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05932.alleles.tsv.gz
+Searching for sequence matches...
+21149 sample loci compared against the catalog containing 923832 loci.
+  21116 matching loci, 197 contained no verified haplotypes.
+  196 loci matched more than one catalog locus and were excluded.
+  1 loci contained SNPs unaccounted for in the catalog and were excluded.
+  23919 total haplotypes examined from matching loci, 23324 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05932.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05933' [41 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05933.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05933.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05933.alleles.tsv.gz
+Searching for sequence matches...
+16138 sample loci compared against the catalog containing 923832 loci.
+  16110 matching loci, 175 contained no verified haplotypes.
+  175 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  18354 total haplotypes examined from matching loci, 17829 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05933.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05934' [42 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05934.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05934.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05934.alleles.tsv.gz
+Searching for sequence matches...
+5513 sample loci compared against the catalog containing 923832 loci.
+  5500 matching loci, 100 contained no verified haplotypes.
+  100 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  6424 total haplotypes examined from matching loci, 6105 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05934.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05935' [43 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05935.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05935.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05935.alleles.tsv.gz
+Searching for sequence matches...
+14496 sample loci compared against the catalog containing 923832 loci.
+  14472 matching loci, 163 contained no verified haplotypes.
+  163 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  16441 total haplotypes examined from matching loci, 15955 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05935.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05936' [44 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05936.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05936.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05936.alleles.tsv.gz
+Searching for sequence matches...
+15068 sample loci compared against the catalog containing 923832 loci.
+  15051 matching loci, 163 contained no verified haplotypes.
+  163 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  17123 total haplotypes examined from matching loci, 16654 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05936.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/jimTNHC05937' [45 of 53]
+  Parsing ./denovo-m4M3n4-out/jimTNHC05937.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05937.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/jimTNHC05937.alleles.tsv.gz
+Searching for sequence matches...
+16003 sample loci compared against the catalog containing 923832 loci.
+  15948 matching loci, 27 contained no verified haplotypes.
+  16 loci matched more than one catalog locus and were excluded.
+  11 loci contained SNPs unaccounted for in the catalog and were excluded.
+  17924 total haplotypes examined from matching loci, 17857 verified.
+Outputing to file ./denovo-m4M3n4-out/jimTNHC05937.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/sibTNHC05938' [46 of 53]
+  Parsing ./denovo-m4M3n4-out/sibTNHC05938.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05938.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05938.alleles.tsv.gz
+Searching for sequence matches...
+34860 sample loci compared against the catalog containing 923832 loci.
+  34668 matching loci, 54 contained no verified haplotypes.
+  29 loci matched more than one catalog locus and were excluded.
+  25 loci contained SNPs unaccounted for in the catalog and were excluded.
+  39377 total haplotypes examined from matching loci, 39260 verified.
+Outputing to file ./denovo-m4M3n4-out/sibTNHC05938.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/sibTNHC05939' [47 of 53]
+  Parsing ./denovo-m4M3n4-out/sibTNHC05939.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05939.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05939.alleles.tsv.gz
+Searching for sequence matches...
+13652 sample loci compared against the catalog containing 923832 loci.
+  13586 matching loci, 59 contained no verified haplotypes.
+  50 loci matched more than one catalog locus and were excluded.
+  9 loci contained SNPs unaccounted for in the catalog and were excluded.
+  15209 total haplotypes examined from matching loci, 15063 verified.
+Outputing to file ./denovo-m4M3n4-out/sibTNHC05939.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/sibTNHC05940' [48 of 53]
+  Parsing ./denovo-m4M3n4-out/sibTNHC05940.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05940.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05940.alleles.tsv.gz
+Searching for sequence matches...
+14219 sample loci compared against the catalog containing 923832 loci.
+  14154 matching loci, 47 contained no verified haplotypes.
+  43 loci matched more than one catalog locus and were excluded.
+  4 loci contained SNPs unaccounted for in the catalog and were excluded.
+  16000 total haplotypes examined from matching loci, 15884 verified.
+Outputing to file ./denovo-m4M3n4-out/sibTNHC05940.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/sibTNHC05941' [49 of 53]
+  Parsing ./denovo-m4M3n4-out/sibTNHC05941.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05941.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/sibTNHC05941.alleles.tsv.gz
+Searching for sequence matches...
+36659 sample loci compared against the catalog containing 923832 loci.
+  36471 matching loci, 56 contained no verified haplotypes.
+  56 loci matched more than one catalog locus and were excluded.
+  0 loci contained SNPs unaccounted for in the catalog and were excluded.
+  41191 total haplotypes examined from matching loci, 41055 verified.
+Outputing to file ./denovo-m4M3n4-out/sibTNHC05941.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/limpo05_R1' [50 of 53]
+  Parsing ./denovo-m4M3n4-out/limpo05_R1.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/limpo05_R1.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/limpo05_R1.alleles.tsv.gz
+Searching for sequence matches...
+114270 sample loci compared against the catalog containing 923832 loci.
+  114222 matching loci, 699 contained no verified haplotypes.
+  69 loci matched more than one catalog locus and were excluded.
+  5 loci contained SNPs unaccounted for in the catalog and were excluded.
+  139628 total haplotypes examined from matching loci, 137909 verified.
+Outputing to file ./denovo-m4M3n4-out/limpo05_R1.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/perdi07_R1' [51 of 53]
+  Parsing ./denovo-m4M3n4-out/perdi07_R1.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/perdi07_R1.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/perdi07_R1.alleles.tsv.gz
+Searching for sequence matches...
+170150 sample loci compared against the catalog containing 923832 loci.
+  169457 matching loci, 806 contained no verified haplotypes.
+  53 loci matched more than one catalog locus and were excluded.
+  57 loci contained SNPs unaccounted for in the catalog and were excluded.
+  187024 total haplotypes examined from matching loci, 185453 verified.
+Outputing to file ./denovo-m4M3n4-out/perdi07_R1.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/santa11_R1' [52 of 53]
+  Parsing ./denovo-m4M3n4-out/santa11_R1.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/santa11_R1.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/santa11_R1.alleles.tsv.gz
+Searching for sequence matches...
+92821 sample loci compared against the catalog containing 923832 loci.
+  92310 matching loci, 619 contained no verified haplotypes.
+  92 loci matched more than one catalog locus and were excluded.
+  23 loci contained SNPs unaccounted for in the catalog and were excluded.
+  106518 total haplotypes examined from matching loci, 105291 verified.
+Outputing to file ./denovo-m4M3n4-out/santa11_R1.matches.tsv.gz
+
+Processing sample './denovo-m4M3n4-out/teres04_R1' [53 of 53]
+  Parsing ./denovo-m4M3n4-out/teres04_R1.tags.tsv.gz
+  Parsing ./denovo-m4M3n4-out/teres04_R1.snps.tsv.gz
+  Parsing ./denovo-m4M3n4-out/teres04_R1.alleles.tsv.gz
+Searching for sequence matches...
+114669 sample loci compared against the catalog containing 923832 loci.
+  113990 matching loci, 737 contained no verified haplotypes.
+  123 loci matched more than one catalog locus and were excluded.
+  5 loci contained SNPs unaccounted for in the catalog and were excluded.
+  135849 total haplotypes examined from matching loci, 134239 verified.
+Outputing to file ./denovo-m4M3n4-out/teres04_R1.matches.tsv.gz
+
+sstacks is done.
+
+tsv2bam
+==========
+/usr/local/bin/tsv2bam -P ./denovo-m4M3n4-out  -M ./pop_map_outgroup.txt
+Logging to './denovo-m4M3n4-out/tsv2bam.log'.
+Configuration for this run:
+  Stacks directory: './denovo-m4M3n4-out/'
+  Batch ID: 1
+  Population map: './pop_map_outgroup.txt'
+  Num. samples: 53
+
+Loading the catalog...
+Processing sample 'jimPS172'...
+Processing sample 'jimPS173'...
+Processing sample 'jimPS174'...
+Processing sample 'jimPS175'...
+Processing sample 'jimPS176'...
+Processing sample 'jimPS177'...
+Processing sample 'jimPS178'...
+Processing sample 'jimPS179'...
+Processing sample 'jimPS180'...
+Processing sample 'lemPS185'...
+Processing sample 'lemPS188'...
+Processing sample 'jimPS193'...
+Processing sample 'jimPS196'...
+Processing sample 'rorPS283'...
+Processing sample 'rorPS284'...
+Processing sample 'rorPS285'...
+Processing sample 'rorPS297'...
+Processing sample 'jimPS05951'...
+Processing sample 'jimTNHC05804'...
+Processing sample 'jimTNHC05805'...
+Processing sample 'jimTNHC05806'...
+Processing sample 'jimTNHC05807'...
+Processing sample 'jimTNHC05808'...
+Processing sample 'jimTNHC05837'...
+Processing sample 'jimTNHC05838'...
+Processing sample 'jimTNHC05839'...
+Processing sample 'jimTNHC05840'...
+Processing sample 'jimTNHC05841'...
+Processing sample 'jimTNHC05842'...
+Processing sample 'jimTNHC05843'...
+Processing sample 'jimTNHC05844'...
+Processing sample 'jimTNHC05845'...
+Processing sample 'lemTNHC05887'...
+Processing sample 'sibTNHC05890'...
+Processing sample 'jimTNHC05927'...
+Processing sample 'jimTNHC05928'...
+Processing sample 'jimTNHC05929'...
+Processing sample 'jimTNHC05930'...
+Processing sample 'jimTNHC05931'...
+Processing sample 'jimTNHC05932'...
+Processing sample 'jimTNHC05933'...
+Processing sample 'jimTNHC05934'...
+Processing sample 'jimTNHC05935'...
+Processing sample 'jimTNHC05936'...
+Processing sample 'jimTNHC05937'...
+Processing sample 'sibTNHC05938'...
+Processing sample 'sibTNHC05939'...
+Processing sample 'sibTNHC05940'...
+Processing sample 'sibTNHC05941'...
+Processing sample 'limpo05_R1'...
+Processing sample 'perdi07_R1'...
+Processing sample 'santa11_R1'...
+Processing sample 'teres04_R1'...
+
+Sample 'jimPS172':
+75125 sample loci (100.0% of 75129) had a one-to-one relationship with the catalog.
+
+Sample 'jimPS173':
+67013 sample loci (97.3% of 68869) had a one-to-one relationship with the catalog.
+
+Sample 'jimPS174':
+84907 sample loci (96.7% of 87810) had a one-to-one relationship with the catalog.
+
+Sample 'jimPS175':
+96968 sample loci (96.2% of 100778) had a one-to-one relationship with the catalog.
+
+Sample 'jimPS176':
+90225 sample loci (96.1% of 93853) had a one-to-one relationship with the catalog.
+
+Sample 'jimPS177':
+72581 sample loci (96.3% of 75385) had a one-to-one relationship with the catalog.
+
+Sample 'jimPS178':
+69413 sample loci (96.3% of 72092) had a one-to-one relationship with the catalog.
+
+Sample 'jimPS179':
+48542 sample loci (96.4% of 50349) had a one-to-one relationship with the catalog.
+
+Sample 'jimPS180':
+57375 sample loci (96.1% of 59720) had a one-to-one relationship with the catalog.
+
+Sample 'lemPS185':
+68077 sample loci (95.4% of 71380) had a one-to-one relationship with the catalog.
+
+Sample 'lemPS188':
+84050 sample loci (94.8% of 88637) had a one-to-one relationship with the catalog.
+
+Sample 'jimPS193':
+95725 sample loci (95.7% of 100059) had a one-to-one relationship with the catalog.
+
+Sample 'jimPS196':
+84914 sample loci (95.7% of 88695) had a one-to-one relationship with the catalog.
+
+Sample 'rorPS283':
+51716 sample loci (98.6% of 52457) had a one-to-one relationship with the catalog.
+
+Sample 'rorPS284':
+96385 sample loci (97.5% of 98829) had a one-to-one relationship with the catalog.
+
+Sample 'rorPS285':
+67614 sample loci (96.8% of 69878) had a one-to-one relationship with the catalog.
+
+Sample 'rorPS297':
+41134 sample loci (96.6% of 42597) had a one-to-one relationship with the catalog.
+
+Sample 'jimPS05951':
+7 sample loci (100.0% of 7) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05804':
+40261 sample loci (96.7% of 41619) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05805':
+51159 sample loci (96.1% of 53234) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05806':
+74031 sample loci (95.9% of 77173) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05807':
+84002 sample loci (95.6% of 87871) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05808':
+17568 sample loci (96.9% of 18122) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05837':
+80734 sample loci (95.7% of 84357) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05838':
+58997 sample loci (96.2% of 61359) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05839':
+73302 sample loci (95.9% of 76461) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05840':
+58003 sample loci (96.3% of 60236) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05841':
+66000 sample loci (96.0% of 68736) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05842':
+71813 sample loci (95.8% of 74926) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05843':
+60440 sample loci (96.1% of 62898) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05844':
+66919 sample loci (96.1% of 69649) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05845':
+58974 sample loci (96.1% of 61368) had a one-to-one relationship with the catalog.
+
+Sample 'lemTNHC05887':
+1634 sample loci (94.4% of 1731) had a one-to-one relationship with the catalog.
+
+Sample 'sibTNHC05890':
+40428 sample loci (96.5% of 41897) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05927':
+20232 sample loci (96.7% of 20922) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05928':
+25668 sample loci (96.9% of 26491) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05929':
+7682 sample loci (96.6% of 7956) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05930':
+23955 sample loci (96.9% of 24731) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05931':
+14672 sample loci (96.8% of 15155) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05932':
+20539 sample loci (97.1% of 21149) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05933':
+15663 sample loci (97.1% of 16138) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05934':
+5304 sample loci (96.2% of 5513) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05935':
+14017 sample loci (96.7% of 14496) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05936':
+14632 sample loci (97.1% of 15068) had a one-to-one relationship with the catalog.
+
+Sample 'jimTNHC05937':
+15748 sample loci (98.4% of 16003) had a one-to-one relationship with the catalog.
+
+Sample 'sibTNHC05938':
+33690 sample loci (96.6% of 34860) had a one-to-one relationship with the catalog.
+
+Sample 'sibTNHC05939':
+13159 sample loci (96.4% of 13652) had a one-to-one relationship with the catalog.
+
+Sample 'sibTNHC05940':
+13701 sample loci (96.4% of 14219) had a one-to-one relationship with the catalog.
+
+Sample 'sibTNHC05941':
+35121 sample loci (95.8% of 36659) had a one-to-one relationship with the catalog.
+
+Sample 'limpo05_R1':
+113363 sample loci (99.2% of 114270) had a one-to-one relationship with the catalog.
+
+Sample 'perdi07_R1':
+165405 sample loci (97.2% of 170150) had a one-to-one relationship with the catalog.
+
+Sample 'santa11_R1':
+89468 sample loci (96.4% of 92821) had a one-to-one relationship with the catalog.
+
+Sample 'teres04_R1':
+109306 sample loci (95.3% of 114669) had a one-to-one relationship with the catalog.
+
+tsv2bam is done.
+
+gstacks
+==========
+/usr/local/bin/gstacks -P ./denovo-m4M3n4-out -M ./pop_map_outgroup.txt
+
+Logging to './denovo-m4M3n4-out/gstacks.log'.
+Locus/sample distributions will be written to './denovo-m4M3n4-out/gstacks.distribs'.
+
+Configuration for this run:
+  Input mode: denovo
+  Population map: './pop_map_outgroup.txt'
+  Input files: 53, e.g. './denovo-m4M3n4-out/jimPS172.matches.bam'
+  Output to: './denovo-m4M3n4-out/gstacks.*'
+  Model: marukilow (var_alpha: 0.05, gt_alpha: 0.05)
+
+Reading BAM headers...
+Processing all loci...
+1%...
+2%...
+5%...
+10%...
+20%...
+50%...
+100%
+Input appears to be single-end (no paired-end reads were seen).
+
+Genotyped 923164 loci:
+  mean number of sites per locus: 120.297
+  a consistent phasing was found for 130922 of out 166986 (78.4%) diploid loci needing phasing
+
+gstacks is done.
+
+populations
+==========
+/usr/local/bin/populations -P ./denovo-m4M3n4-out -M ./pop_map_outgroup.txt
+
+Logging to './denovo-m4M3n4-out/populations.log'.
+Locus/sample distributions will be written to './denovo-m4M3n4-out/populations.distribs'.
+populations parameters selected:
+  Percent samples limit per population: 0
+  Locus Population limit: 1
+  Log liklihood filtering: off; threshold: 0
+  Minor allele frequency cutoff: 0
+  Maximum observed heterozygosity cutoff: 1
+  Applying Fst correction: none.
+  Pi/Fis kernel smoothing: off
+  Fstats kernel smoothing: off
+  Bootstrap resampling: off
+
+Parsing population map...
+The population map contained 53 samples, 13 population(s), 1 group(s).
+Working on 53 samples.
+Working on 13 population(s):
+    kavanayen_jim: jimPS172, jimPS173, jimPS174, jimPS175, jimPS176, jimPS177, jimPS178, jimPS179, jimPS180
+    kavanayen_lem: lemPS185
+    escalera_lem: lemPS188
+    escalera_jim: jimPS193, jimPS196
+    saltoangel_ror: rorPS283, rorPS284, rorPS285, rorPS297
+    kawi_jim: jimPS05951
+    Guayaraca_jim: jimTNHC05804, jimTNHC05805, jimTNHC05806, jimTNHC05807, jimTNHC05808
+    ElOso_jim: jimTNHC05837, jimTNHC05838, jimTNHC05839, jimTNHC05840, jimTNHC05841, jimTNHC05842, jimTNHC05843, jimTNHC05844, jimTNHC05845
+    Jaspe_lem: lemTNHC05887
+    pacheco_sib: sibTNHC05890
+    chivaton_jim: jimTNHC05927, jimTNHC05928, jimTNHC05929, jimTNHC05930, jimTNHC05931, jimTNHC05932, jimTNHC05933, jimTNHC05934, jimTNHC05935, 
+                  jimTNHC05936, jimTNHC05937
+    chivaton_sib: sibTNHC05938, sibTNHC05939, sibTNHC05940, sibTNHC05941
+    cerrado: limpo05_R1, perdi07_R1, santa11_R1, teres04_R1
+Working on 1 group(s) of populations:
+    defaultgrp: kavanayen_jim, kavanayen_lem, escalera_lem, escalera_jim, saltoangel_ror, kawi_jim, Guayaraca_jim, ElOso_jim, Jaspe_lem, pacheco_sib, chivaton_jim, chivaton_sib, cerrado
+
+Genotyping markers will be written to './denovo-m4M3n4-out/populations.markers.tsv'
+Raw Genotypes/Haplotypes will be written to './denovo-m4M3n4-out/populations.haplotypes.tsv'
+Population-level summary statistics will be written to './denovo-m4M3n4-out/populations.sumstats.tsv'
+Population-level haplotype summary statistics will be written to './denovo-m4M3n4-out/populations.hapstats.tsv'
+
+Processing data in batches:
+  * load a batch of catalog loci and apply filters
+  * compute SNP- and haplotype-wise per-population statistics
+  * write the above statistics in the output files
+  * export the genotypes/haplotypes in specified format(s)
+More details in './denovo-m4M3n4-out/populations.distribs'.
+Now processing...
+Batch 1
+Batch 2
+Batch 3
+Batch 4
+Batch 5
+Batch 6
+Batch 7
+Batch 8
+Batch 9
+Batch 10
+Batch 11
+Batch 12
+Batch 13
+Batch 14
+Batch 15
+Batch 16
+Batch 17
+Batch 18
+Batch 19
+Batch 20
+Batch 21
+Batch 22
+Batch 23
+Batch 24
+Batch 25
+Batch 26
+Batch 27
+Batch 28
+Batch 29
+Batch 30
+Batch 31
+Batch 32
+Batch 33
+Batch 34
+Batch 35
+Batch 36
+Batch 37
+Batch 38
+Batch 39
+Batch 40
+Batch 41
+Batch 42
+Batch 43
+Batch 44
+Batch 45
+Batch 46
+Batch 47
+Batch 48
+Batch 49
+Batch 50
+Batch 51
+Batch 52
+Batch 53
+Batch 54
+Batch 55
+Batch 56
+Batch 57
+Batch 58
+Batch 59
+Batch 60
+Batch 61
+Batch 62
+Batch 63
+Batch 64
+Batch 65
+Batch 66
+Batch 67
+Batch 68
+Batch 69
+Batch 70
+Batch 71
+Batch 72
+Batch 73
+Batch 74
+Batch 75
+Batch 76
+Batch 77
+Batch 78
+Batch 79
+Batch 80
+Batch 81
+Batch 82
+Batch 83
+Batch 84
+Batch 85
+Batch 86
+Batch 87
+Batch 88
+Batch 89
+Batch 90
+Batch 91
+Batch 92
+Batch 93
+
+Removed 3056 loci that did not pass sample/population constraints from 923164 loci.
+Kept 920108 loci, composed of 110685274 sites; 7 of those sites were filtered, 545175 variant sites remained.
+Mean genotyped sites per locus: 120.30bp (stderr 0.00).
+
+Population summary statistics (more detail in populations.sumstats_summary.tsv):
+  kavanayen_jim: 4.1342 samples per locus; pi: 0.20236; all/variant/polymorphic sites: 30820030/282987/127527; private alleles: 49701
+  kavanayen_lem: 1 samples per locus; pi: 0.12394; all/variant/polymorphic sites: 8147957/93479/11586; private alleles: 16836
+  escalera_lem: 1 samples per locus; pi: 0.11399; all/variant/polymorphic sites: 10060539/105904/12072; private alleles: 21577
+  escalera_jim: 1.4812 samples per locus; pi: 0.13691; all/variant/polymorphic sites: 16373709/201229/39542; private alleles: 13399
+  saltoangel_ror: 2.5865 samples per locus; pi: 0.42179; all/variant/polymorphic sites: 17095917/63878/51099; private alleles: 3670
+  kawi_jim: 1 samples per locus; pi: 0; all/variant/polymorphic sites: 837/22/0; private alleles: 0
+  Guayaraca_jim: 2.4467 samples per locus; pi: 0.12737; all/variant/polymorphic sites: 15531617/210065/47585; private alleles: 14885
+  ElOso_jim: 4.8062 samples per locus; pi: 0.12879; all/variant/polymorphic sites: 19732644/240355/70234; private alleles: 25635
+  Jaspe_lem: 1 samples per locus; pi: 0.078164; all/variant/polymorphic sites: 194716/3966/310; private alleles: 494
+  pacheco_sib: 1 samples per locus; pi: 0.089563; all/variant/polymorphic sites: 4844142/86386/7737; private alleles: 4525
+  chivaton_jim: 2.5285 samples per locus; pi: 0.14165; all/variant/polymorphic sites: 10500527/150895/38409; private alleles: 7851
+  chivaton_sib: 2.1086 samples per locus; pi: 0.40149; all/variant/polymorphic sites: 6941416/18958/12586; private alleles: 4296
+  cerrado: 2.8588 samples per locus; pi: 0.50238; all/variant/polymorphic sites: 32949962/158059/153512; private alleles: 1780
+Populations is done.
+denovo_map.pl is done.
+
+denovo_map.pl completed at 2019-10-07 20:33:54

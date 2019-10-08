@@ -23,7 +23,7 @@ We wanted to investigate whether genotyping outputs and various diersity and div
 	
 	 
 
-## 1.2.1. Parameter permutation tests with only *H. jimenezi* | **denovo_map**
+## 2.1. Parameter permutation tests with only *H. jimenezi* | **denovo_map**
 
 We tested the following parameter combinations for this dataset:
 
@@ -61,7 +61,7 @@ and found the following results:
 > De acuerdo a los resultados mostrados en los gráficos, vemos que disminuye el número de loci y SNPs obtenidos con m5 en comparación a m4 (m es la cantidad mínima de secuencias iguales para formar un stack). M (distancia permitida entre stacks de un mismo locus de un mismo individuo) no afecta en los resultados. Mientras n (distancia permitida entre indiviuos para un mismo locus) aumenta, se ve una disminución de loci y un aumento de SNPs (cambio esperado). En el gráfico de r80 vemos que en n3 hay un pequeño aumento de loci y SNPs, por este motivo hemos decidido aceptar la combinación: m4M3n3.
 
 
-## 1.2.1. Parameter permutations with all Gran Sabana *Hypsiboas*
+## 2.2. Parameter permutations with all Gran Sabana *Hypsiboas*
 
 We used the same parameter combinations as above, but varying parameter `-n` a bit more ot account for the higher divergence:
 
@@ -92,7 +92,7 @@ DISCUSS PARAMETER CHOICE: `m4M3n3`
 
 In order to obtain a known outgroup to our Gran Sabana Hypsiboas group of interest, we re-genotyped all *Hypsiboas* using four samples of *H. lundii* from the Brazilian Cerrado, which were previously published in this [paper](https://onlinelibrary.wiley.com/doi/full/10.1111/mec.15045). For this matrix, we increased n to 4, but retained all other parameters the same (so, we ran `m4M3n4`)
 
-The logfiles for the final ***denovo_map*** analyses can be found here for the analyses with [*H. jimenezi* only](), all [Gran Sabana *Hypsiboas*](), and for the dataset that includes the [Cerrado outgroup](). 
+The logfiles for the final ***denovo_map*** analyses can be found here for the analyses with [*H. jimenezi* only](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n3-denovo_map-jimmy.log), all [Gran Sabana *Hypsiboas*](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n3-denovo_map-hypsiALL.log), and for the dataset that includes the [Cerrado outgroup](). 
 
 All graphs in this section were generated using [this master file](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/Grafico_Resultado_param_TODOS.xlsx).
 
@@ -103,7 +103,7 @@ All graphs in this section were generated using [this master file](https://githu
 First, we had to re-export the final parameter choice genotyping matrix with `populations` using minimal filters: 
 
 	populations -P ./denovo-m4M3n2 --popmap ./pop_map-jimmy.txt -O ./denovo-m4M3n2 -p 1 -r 0.1 --write_random_snp --vcf	
->The raw unfiltered matrices exported from populations can be found here for [*H. jimenezi* only](), for all [Gran Sabana *Hypsiboas*](), and for the dataset that includes the [Cerrado outgroup](). 
+>The raw unfiltered matrices exported from populations can be found here for [*H. jimenezi* only](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n3-populations-jimmy.snps.vcf), for all [Gran Sabana *Hypsiboas*](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n3-populations-hypsiALL.snps.vcf), and for the dataset that includes the [Cerrado outgroup](). 
 
 
 Then, we transformed the `.vcf` files using vcftools into `.ped` and `.map` files for inputting and filtering in plink. 
