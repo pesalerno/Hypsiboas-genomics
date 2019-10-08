@@ -1,6 +1,6 @@
 # 1. DEMULTIPLEXING
 
-
+All genotyping pipeline analyses were performed using Stacks V 2.0, and all filtering steps were performed using stacks and plink. 
  
 >Raw data can be found on the dryad repository for this project upon manuscript acceptance. 
 
@@ -9,7 +9,7 @@ For demultiplexing and filtering raw data, we used the following code:
 
 	process_radtags -p /path/to/raw-data -o /path/to/output -b /path/to/barcodes.txt -c -q -r --inline_index -- renz_1 sphI --renz_2 mspI
 
-The barcodes file can be found [here](). For locality data and info, please see [this file](). 
+The barcodes file can be found [here](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/demultiplex_todos2.txt). For locality data and info, please see [this file](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/HYPSIBOAS_info_codes_localities.xlsx). 
 
 # 2. DENOVO MAP | genotyping tests
 
@@ -23,7 +23,7 @@ The barcodes file can be found [here](). For locality data and info, please see 
 
 >TRANSLATE THIS: Primero hicimos pruebas de genotipificación utilizando unicamente la especie de interes principal, *H. Jimenezi*, y luego hicimos las mismas pruebas de genotipificacion pero con todas las especies, y variando un poco el parametro n (entre las dos pruebas) para tomar en cuenta la diferencia de divergencia entre los dos sets de datos. 
 
-## 1.2.1. Parameter permutations with only *H. jimenezi*.** 
+## 1.2.1. Parameter permutations with only *H. jimenezi*. 
 
 We tested the following parameter combinations for this dataset:
 
@@ -63,9 +63,9 @@ and we found the following results:
 > TRANSLATE THIS: De acuerdo a los resultados mostrados en los gráficos, vemos que disminuye el número de loci y SNPs obtenidos con m5 en comparación a m4 (m es la cantidad mínima de secuencias iguales para formar un stack). M (distancia permitida entre stacks de un mismo locus de un mismo individuo) no afecta en los resultados. Mientras n (distancia permitida entre indiviuos para un mismo locus) aumenta, se ve una disminución de loci y un aumento de SNPs (cambio esperado). En el gráfico de r80 vemos que en n3 hay un pequeño aumento de loci y SNPs, por este motivo hemos decidido aceptar la combinación: m4M3n3.
 
 
-**1.2.1. Pruebas con todas las *Hypsiboas* de la Gran Sabana** 
+## 1.2.1. Parameter permutations with all Gran Sabana *Hypsiboas*
 
-Para el resto de las *Hypsiboas*, repetimos las pruebas de genotipificacion y con el mismo codigo que utilizamos para H. jimenezi, pero con la siguiente combinacion de parametros:
+We used the same parameter combinations as above, but varying parameter `-n` a bit more:
 
 
 permutations |	-m |	-M |	-n
@@ -83,37 +83,43 @@ j 	| 5 | 4 |	3
 k	| 5 | 4 | 4
 l	| 5 | 4 | 6
 	
-Para esta pruebas, encontramos los siguientes resultados: 
+For these tests, we found the following results:
 
 
 ![fotito3](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/fotos/Grafico3.png)
 
 ![fotito3](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/fotos/Grafico4.png)
 
-Parece ser, entonces, que la mejor opcion para TODAS las muestras de Hypsiboas, en cuanto a combinacion de parametros, es de m4M3n4, es decir, el optimo solo cambio de n de 3 a 4, y todo lo demas permance igual. ESta sera la combinacion de parametros que usaremos para el resto de los analisis de todos los Hypsiboas. 
+> DISCUSS PARAMETER CHOICE: 
 
->Todos los graficos de esta seccion fueron generados con los datos de [este archivo](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/Grafico_Resultado_param_TODOS.xlsx).
+`m4M3n3`
+
+In order to obtain a known outgroup to our Gran Sabana Hypsiboas group of interest, we re-genotyped all *Hypsiboas* using four samples of *H. lundii* from the Brazilian Cerrado, which were previously published in this [paper](https://onlinelibrary.wiley.com/doi/full/10.1111/mec.15045). For this matrix, we increased n to 4, but retained all other parameters the same (so, we ran `m4M3n4`)
+
+>All graphs in this section were generated using [this master file](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/Grafico_Resultado_param_TODOS.xlsx).
 
 
-# 3. GENOTIPIFICACION FINAL CON PARÁMETROS SELECCIONADOS
+# 3. filtering final matrices in plink
 
 
+First, we had to re-export in populations using minimal filters such as: 
 
-**transformando el archivo en VCF TOOLS** 
 
-Necesitamos utilizar vcftools para transformar el archivo de .vcf (que exporta ahora stacks 2.0) a .ped y .map, para poder utilizar en el programa plink. PAra esto, corremos la siguiente linea de codigo:
+Then, we transformed the `.vcf` file using vcftools into `.ped` and `.map` files for filtering in plink. 
 
 	vcftools --vcf path/to/file.vcf --plink --out filename
 
-## filtrando en PLINK
+The three main filters we used in plink were: 
 
-
-**1er FILTRO:** 
-
-	./plink --file populations.snps --geno 0.25 --recode --out outputpopulations_a --noweb
-
-Resultados:
+	--geno --mind --maf 
 	
+Thus, we tested a few permutations of these filtering thresholds to retain the most number of loci and individuals. 
+
+
+	--geno 0.25
+	
+Which resulted in the following:
+
 	Total genotyping rate in remaining individuals is 0.331516
 	71955 SNPs failed missingness test ( GENO > 0.25 )
 	0 SNPs failed frequency test ( MAF < 0 )
@@ -121,21 +127,31 @@ Resultados:
 	After filtering, 0 cases, 0 controls and 37 missing
 	After filtering, 0 males, 0 females, and 37 of unspecified sex
 	Writing recoded ped file to [ outputpopulations_a.ped ] 
-	Writing new map file to [ outputpopulations_a.map ] 
+	Writing new map file to [ outputpopulations_a.map ]
 
-**2do FILTRO:**
+Then we did: 
 
-	./plink --file outputpopulations_a --mind 0.5 --recode --out outputpopulations_b --noweb
-
-Resultados:
+	--mind 0.5
 	
+Which resulted in the following: 
+
 	Before frequency and genotyping pruning, there are 4680 SNPs
 	37 founders and 0 non-founders found
 	Writing list of removed individuals to [ outputpopulations_b.irem ]
 	4 of 37 individuals removed for low genotyping ( MIND > 0.5 )
 	Total genotyping rate in remaining individuals is 0.881507
+		
+And finally, we did: 
 
-**3er FILTRO:** 
+	--maf 0.016
+	
+**transformando el archivo en VCF TOOLS** 
+
+Necesitamos utilizar vcftools para transformar el archivo de .vcf (que exporta ahora stacks 2.0) a .ped y .map, para poder utilizar en el programa plink. PAra esto, corremos la siguiente linea de codigo:
+
+	vcftools --vcf path/to/file.vcf --plink --out filename
+
+
 	
 	./plink --file outputpopulations_b --maf 0.016 --recode --out outputpopulations_c --noweb
 
