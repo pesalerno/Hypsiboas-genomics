@@ -92,7 +92,7 @@ DISCUSS PARAMETER CHOICE: `m4M3n3`
 
 In order to obtain a known outgroup to our Gran Sabana Hypsiboas group of interest, we re-genotyped all *Hypsiboas* using four samples of *H. lundii* from the Brazilian Cerrado, which were previously published in this [paper](https://onlinelibrary.wiley.com/doi/full/10.1111/mec.15045). For this matrix, we increased n to 4, but retained all other parameters the same (so, we ran `m4M3n4`)
 
-The logfiles for the final ***denovo_map*** analyses can be found here for the analyses with [*H. jimenezi* only](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n3-denovo_map-jimmy.log), all [Gran Sabana *Hypsiboas*](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n3-denovo_map-hypsiALL.log), and for the dataset that includes the [Cerrado outgroup](). 
+The logfiles for the final ***denovo_map*** analyses can be found here for the analyses with [*H. jimenezi* only](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n3-denovo_map-jimmy.log), all [Gran Sabana *Hypsiboas*](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n3-denovo_map-hypsiALL.log), and for the dataset that includes the [Cerrado outgroup](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n4-denovo_map-OUT.log). 
 
 All graphs in this section were generated using [this master file](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/Grafico_Resultado_param_TODOS.xlsx).
 
@@ -103,7 +103,7 @@ All graphs in this section were generated using [this master file](https://githu
 First, we had to re-export the final parameter choice genotyping matrix with `populations` using minimal filters: 
 
 	populations -P ./denovo-m4M3n2 --popmap ./pop_map-jimmy.txt -O ./denovo-m4M3n2 -p 1 -r 0.1 --write_random_snp --vcf	
->The raw unfiltered matrices exported from populations can be found here for [*H. jimenezi* only](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n3-populations-jimmy.snps.vcf), for all [Gran Sabana *Hypsiboas*](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n3-populations-hypsiALL.snps.vcf), and for the dataset that includes the [Cerrado outgroup](). 
+>The raw unfiltered matrices exported from populations can be found here for [*H. jimenezi* only](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n3-populations-jimmy.snps.vcf), for all [Gran Sabana *Hypsiboas*](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n3-populations-hypsiALL.snps.vcf), and for the dataset that includes the [Cerrado outgroup](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/m4M3n4-populations-OUT.snps.vcf). 
 
 
 Then, we transformed the `.vcf` files using vcftools into `.ped` and `.map` files for inputting and filtering in plink. 
