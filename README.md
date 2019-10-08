@@ -102,18 +102,37 @@ In order to obtain a known outgroup to our Gran Sabana Hypsiboas group of intere
 # 3. filtering final matrices in plink
 
 
-First, we had to re-export in populations using minimal filters such as: 
+First, we had to re-export the final parameter choice genotyping matrix with `populations` using minimal filters: 
 
+	populations -P ./denovo-m4M3n2 --popmap ./pop_map-jimmy.txt -O ./denovo-m4M3n2 -p 1 -r 0.1 --write_random_snp --vcf	
 
 Then, we transformed the `.vcf` file using vcftools into `.ped` and `.map` files for filtering in plink. 
 
 	vcftools --vcf path/to/file.vcf --plink --out filename
+
+## 3.1. general filtering permutations
 
 The three main filters we used in plink were: 
 
 	--geno --mind --maf 
 	
 Thus, we tested a few permutations of these filtering thresholds to retain the most number of loci and individuals. 
+
+
+**a.filtering permutations with only *H jimenezi***
+ 
+ 
+
+1er Filtro | 2do Filtro | SNPs | Individuos
+---------- | ---------- | ---- | ---------
+0.5 | 0.5 | 19000 | 25
+0.5 | 0.6 | 19000 | 28
+0.5 | 0.4 | 19000 | 24
+0.25 | 0.6 | 4600 | 33
+0.25 | 0.5 | 4600 | 33
+0.25 | 0.4 | 4600 | 28
+ 
+>En esta tabla se puede ver que cuando se excluyen los SNPs que están en menos del 75% de los individuos, y se excluyen los individuos que no tienen más del 50% de SNPs, nos quedamos con 4600 SNPs y con 33 individuos (se excluyeron solo 4 individuos).
 
 
 	--geno 0.25
@@ -144,19 +163,7 @@ Which resulted in the following:
 And finally, we did: 
 
 	--maf 0.016
-	
-**transformando el archivo en VCF TOOLS** 
 
-Necesitamos utilizar vcftools para transformar el archivo de .vcf (que exporta ahora stacks 2.0) a .ped y .map, para poder utilizar en el programa plink. PAra esto, corremos la siguiente linea de codigo:
-
-	vcftools --vcf path/to/file.vcf --plink --out filename
-
-
-	
-	./plink --file outputpopulations_b --maf 0.016 --recode --out outputpopulations_c --noweb
-
-Resultados:
-	
 	Before frequency and genotyping pruning, there are 4680 SNPs
 	33 founders and 0 non-founders found
 	Total genotyping rate in remaining individuals is 0.881507
@@ -164,29 +171,19 @@ Resultados:
 	131 SNPs failed frequency test ( MAF < 0.016 )
 	After frequency and genotyping pruning, there are 4549 SNPs
 
+**b.filtering permutations with all Gran Sabana *Hypsiboas***
 
-## pruebas de filtrado
+add things here
 
-Hicimos pruebas de filtrado en **plink** con distintos niveles de filtrado, para ver el efecto de retencion de SNPs e individuos. 
- 
-**Pruebas de filtrado con solo jimenezi**
- 
- 
 
-1er Filtro | 2do Filtro | SNPs | Individuos
----------- | ---------- | ---- | ---------
-0.5 | 0.5 | 19000 | 25
-0.5 | 0.6 | 19000 | 28
-0.5 | 0.4 | 19000 | 24
-0.25 | 0.6 | 4600 | 33
-0.25 | 0.5 | 4600 | 33
-0.25 | 0.4 | 4600 | 28
- 
->En esta tabla se puede ver que cuando se excluyen los SNPs que están en menos del 75% de los individuos, y se excluyen los individuos que no tienen más del 50% de SNPs, nos quedamos con 4600 SNPs y con 33 individuos (se excluyeron solo 4 individuos).
+**c.filtering permutations with cerrado outgroup**
+
+add things here
 
 
 
-## filtrando de acuerdo a LINKAGE DISEQUILIBRIUM
+
+## 3.2. linkage disequilibrium filter
 
 Ver los SNPs que están relacionados por estar muy cerca o en el mismo cromosoma y filtrarlos.
 
@@ -208,4 +205,4 @@ Se borraron 323 SNPs de la matriz. Ahora la matriz final está en outputpopulati
 Programa que transforma las matrices finales .ped y map en structure y en genepop. 
 
 ## estimando estructura poblacional en R
-Hacer gráficos utilizando [el siguiente codigo](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/SCRIPT_ADEGENET.R) para el paquete **adegenet** en R. 
+Hacer gráficos utilizando [el siguiente codigo](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/SCRIPT_ADEGENET.R) para el paquete **adegenet** en R. 
