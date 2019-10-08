@@ -1,6 +1,6 @@
 # 1. DEMULTIPLEXING
 
-All genotyping pipeline analyses were performed using Stacks V 2.0, and all filtering steps were performed using stacks and plink. 
+All genotyping pipeline analyses were performed using Stacks V 2.0, and all filtering steps were performed using stacks and plink (see below). 
  
 >Raw data can be found on the dryad repository for this project upon manuscript acceptance. 
 
@@ -13,7 +13,9 @@ The barcodes file can be found [here](https://github.com/pesalerno/Hypsiboas-gen
 
 # 2. DENOVO MAP | genotyping tests
 
->WRITE THINGS HERE!!! from minga site...
+We tested various parameter combinations for the three main stacks parameters: `-m` or minimum number or reads to create a stacks, `-M` or maximum number of differences among stacks to call a locus (within individuals), and `-n` or maximum number of differences allowed among individuals. Because `-n` is very important for determining whether paralogs or orthologs are being joined as loci, then we varied this parameter differently according to the dataset. We based these parameter tests and assessments on this [tutorial](http://catchenlab.life.illinois.edu/stacks/param_tut.php) and on [this paper](https://github.com/pesalerno/MingaGenomica2019/blob/master/lecturas/Paris-etal-2017.pdf). 
+
+We wanted to investigate whether genotyping outputs and various diersity and divergence estimates vary according to how they are genotyped, we performed genotyping parameter tests with two sub-datasets. The first oly contained the main species of interest, H. jimenezi, and the second contained also the rest of the Gran Sabana Hypsiboas species, which inherently introduces a substantial amount of divergence of the sample to be analyzed. 
 
 
 	cd raw-data
@@ -21,9 +23,7 @@ The barcodes file can be found [here](https://github.com/pesalerno/Hypsiboas-gen
 	
 	 
 
->TRANSLATE THIS: Primero hicimos pruebas de genotipificación utilizando unicamente la especie de interes principal, *H. Jimenezi*, y luego hicimos las mismas pruebas de genotipificacion pero con todas las especies, y variando un poco el parametro n (entre las dos pruebas) para tomar en cuenta la diferencia de divergencia entre los dos sets de datos. 
-
-## 1.2.1. Parameter permutations with only *H. jimenezi*. 
+## 1.2.1. Parameter permutation tests with only *H. jimenezi* | **denovo_map**
 
 We tested the following parameter combinations for this dataset:
 
@@ -52,20 +52,18 @@ Then, we ran populations for each of these analyses exporting loci that are pres
 
 	populations -P ./denovo-m4M3n2 --popmap ./pop_map-jimmy.txt -O ./denovo-m4M3n2 -p 1 -r 0.8 --write_random_snp --plink	
 
-and we found the following results: 
+and found the following results: 
 
 
 ![fotito2](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/fotos/Grafico2.png)
 
 
-	
-
-> TRANSLATE THIS: De acuerdo a los resultados mostrados en los gráficos, vemos que disminuye el número de loci y SNPs obtenidos con m5 en comparación a m4 (m es la cantidad mínima de secuencias iguales para formar un stack). M (distancia permitida entre stacks de un mismo locus de un mismo individuo) no afecta en los resultados. Mientras n (distancia permitida entre indiviuos para un mismo locus) aumenta, se ve una disminución de loci y un aumento de SNPs (cambio esperado). En el gráfico de r80 vemos que en n3 hay un pequeño aumento de loci y SNPs, por este motivo hemos decidido aceptar la combinación: m4M3n3.
+> De acuerdo a los resultados mostrados en los gráficos, vemos que disminuye el número de loci y SNPs obtenidos con m5 en comparación a m4 (m es la cantidad mínima de secuencias iguales para formar un stack). M (distancia permitida entre stacks de un mismo locus de un mismo individuo) no afecta en los resultados. Mientras n (distancia permitida entre indiviuos para un mismo locus) aumenta, se ve una disminución de loci y un aumento de SNPs (cambio esperado). En el gráfico de r80 vemos que en n3 hay un pequeño aumento de loci y SNPs, por este motivo hemos decidido aceptar la combinación: m4M3n3.
 
 
 ## 1.2.1. Parameter permutations with all Gran Sabana *Hypsiboas*
 
-We used the same parameter combinations as above, but varying parameter `-n` a bit more:
+We used the same parameter combinations as above, but varying parameter `-n` a bit more ot account for the higher divergence:
 
 
 permutations |	-m |	-M |	-n
@@ -90,13 +88,13 @@ For these tests, we found the following results:
 
 ![fotito3](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/fotos/Grafico4.png)
 
-> DISCUSS PARAMETER CHOICE: 
-
-`m4M3n3`
+DISCUSS PARAMETER CHOICE: `m4M3n3`
 
 In order to obtain a known outgroup to our Gran Sabana Hypsiboas group of interest, we re-genotyped all *Hypsiboas* using four samples of *H. lundii* from the Brazilian Cerrado, which were previously published in this [paper](https://onlinelibrary.wiley.com/doi/full/10.1111/mec.15045). For this matrix, we increased n to 4, but retained all other parameters the same (so, we ran `m4M3n4`)
 
->All graphs in this section were generated using [this master file](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/Grafico_Resultado_param_TODOS.xlsx).
+The logfiles for the final ***denovo_map*** analyses can be found here for the analyses with [*H. jimenezi* only](), all [Gran Sabana *Hypsiboas*](), and for the dataset that includes the [Cerrado outgroup](). 
+
+All graphs in this section were generated using [this master file](https://github.com/pesalerno/Hypsiboas-genomics/blob/master/files/Grafico_Resultado_param_TODOS.xlsx).
 
 
 # 3. filtering final matrices in plink
@@ -105,18 +103,18 @@ In order to obtain a known outgroup to our Gran Sabana Hypsiboas group of intere
 First, we had to re-export the final parameter choice genotyping matrix with `populations` using minimal filters: 
 
 	populations -P ./denovo-m4M3n2 --popmap ./pop_map-jimmy.txt -O ./denovo-m4M3n2 -p 1 -r 0.1 --write_random_snp --vcf	
+>The raw unfiltered matrices exported from populations can be found here for [*H. jimenezi* only](), for all [Gran Sabana *Hypsiboas*](), and for the dataset that includes the [Cerrado outgroup](). 
 
-Then, we transformed the `.vcf` file using vcftools into `.ped` and `.map` files for filtering in plink. 
+
+Then, we transformed the `.vcf` files using vcftools into `.ped` and `.map` files for inputting and filtering in plink. 
 
 	vcftools --vcf path/to/file.vcf --plink --out filename
 
 ## 3.1. general filtering permutations
 
-The three main filters we used in plink were: 
-
-	--geno --mind --maf 
+The three main filters we used in plink were `--geno`, or eliminating loci with too much missing data, `--mind`, or eliminating individuals with too much missing data, and `--maf` or eliminating loci based on the frequency of the minor allele.  
 	
-Thus, we tested a few permutations of these filtering thresholds to retain the most number of loci and individuals. 
+Thus, we tested a few permutations of these filtering thresholds to retain the most number of loci and individuals in all three datasets. 
 
 
 **a.filtering permutations with only *H jimenezi***
