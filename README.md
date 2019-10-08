@@ -133,7 +133,7 @@ Thus, we tested a few permutations of these filtering thresholds to retain the m
 >En esta tabla se puede ver que cuando se excluyen los SNPs que están en menos del 75% de los individuos, y se excluyen los individuos que no tienen más del 50% de SNPs, nos quedamos con 4600 SNPs y con 33 individuos (se excluyeron solo 4 individuos).
 
 
-	--geno 0.25
+	./plink --file populations.snps --geno 0.25 --recode --out outputpopulations_a --noweb
 	
 Which resulted in the following:
 
@@ -176,10 +176,22 @@ add things here
 
 **c.filtering permutations with cerrado outgroup**
 
-add things here
+We tried various levels of stringency for this dataset, based on the large amount of RAD allele and locus dropout and on the low genotyping rate for some individuals in the sample.  
+ 
+
+--geno | --mind | SNPs retained | Inds removed
+---------- | ---------- | ---- | ---------
+0.5 | 0.5 | 9115 | 23
+**0.5 | 0.6 | 9115 | 19
+0.5 | 0.8 | 9115 | 16
+0.25 | 0.5 | 31 | 10
+0.35 | 0.5 | 461 | 16
+**0.35 | 0.8 | 461 | 12
 
 
-
+>In all cases, all individuals from ***H. lundii*** were completely eliminated from the matrix due to nearly zero overlap in the genotyped loci between the ingroup and the outgroup. Thus, we did not use these individuals in any downstream analyses. 
+>
+>We retained two general matrices for this larger dataset, one with higher number of retained individuals, and one with a higher number of retained loci, to evaluate the effect of these varying degrees and biases within the missing data patterns. 
 
 ## 3.2. linkage disequilibrium filter
 
